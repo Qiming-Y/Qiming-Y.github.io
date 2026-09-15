@@ -255,6 +255,7 @@ button { font-family: inherit; cursor: pointer; }
 .badge--q2 { background: var(--q2); }
 .badge--ei { background: var(--ei); }
 .badge--conf { background: var(--haze); }
+.badge--wip { background: #8b5e1a; opacity: .85; }
 .pub__content { flex: 1; min-width: 200px; }
 .pub__content h4 {
   font-size: 15px; font-weight: 600;
