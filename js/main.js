@@ -1,4 +1,4 @@
-/* Qiming Yang — Dark Academic Homepage */
+/* Qiming Yang — Light Academic Homepage */
 
 (function () {
   'use strict';
@@ -19,26 +19,7 @@
     });
   }
 
-  /* Scroll reveal */
-  const revealEls = document.querySelectorAll('.hero, .section');
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver(
-      entries => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
-    );
-    revealEls.forEach(el => io.observe(el));
-  } else {
-    revealEls.forEach(el => el.classList.add('visible'));
-  }
-
-  /* Active nav link */
+  /* Active nav on scroll */
   const sections = document.querySelectorAll('.section[id]');
   const navLinks = document.querySelectorAll('.nav__link');
   function updateNav() {

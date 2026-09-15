@@ -10,18 +10,10 @@
 </head>
 <body>
 
-  <!-- ambient background -->
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="bg-glow bg-glow--a" aria-hidden="true"></div>
-  <div class="bg-glow bg-glow--b" aria-hidden="true"></div>
-
   <!-- ========== Nav ========== -->
   <header class="nav">
     <div class="nav__inner">
-      <a href="#top" class="nav__logo">
-        <span class="nav__logo-mark">QY</span>
-        <span class="nav__logo-text">Qiming Yang</span>
-      </a>
+      <a href="#top" class="nav__logo">Qiming Yang</a>
       <button class="nav__burger" aria-label="菜单" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -31,408 +23,403 @@
         <a href="#publications" class="nav__link">Publications</a>
         <a href="#patents" class="nav__link">Patents</a>
         <a href="#certifications" class="nav__link">Certs</a>
+        <a href="#conferences" class="nav__link">Conferences</a>
         <a href="#awards" class="nav__link">Awards</a>
         <a href="#experience" class="nav__link">Experience</a>
-        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+        <a href="#contact" class="nav__link">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <div class="page" id="top">
 
-    <!-- ========== Hero ========== -->
-    <section class="hero">
-      <div class="hero__avatar-wrap">
-        <div class="hero__ring"></div>
-        <img class="hero__avatar hero__avatar--photo" src="assets/avatar.jpg" alt="杨启明">
-      </div>
-      <h1 class="hero__name">
-        <span class="hero__name-zh">杨启明</span>
-        <span class="hero__name-en">Qiming Yang</span>
-      </h1>
-      <p class="hero__role">
-        M.Sc. · Low-Altitude Technology ·
-        <span class="hero__school">The University of Hong Kong</span>
-      </p>
-      <div class="hero__tags">
-        <span class="chip chip--cyan">Multi-Agent RL</span>
-        <span class="chip chip--violet">V2X</span>
-        <span class="chip chip--cyan">UAV Edge Computing</span>
-        <span class="chip chip--violet">Intelligent Transportation</span>
-      </div>
-      <div class="hero__actions">
-        <a href="#publications" class="btn btn--primary">
-          <i class="fa-solid fa-file-lines"></i> Publications
-        </a>
-        <a href="#contact" class="btn btn--ghost">
-          <i class="fa-solid fa-envelope"></i> Contact
-        </a>
-        <a href="https://github.com/Qiming-Y" target="_blank" rel="noopener" class="btn btn--ghost">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-      </div>
-      <div class="hero__scroll" aria-hidden="true">
-        <span></span>
-      </div>
-    </section>
-
-    <!-- ========== Education ========== -->
-    <section id="education" class="section">
-      <div class="section__head">
-        <span class="section__num">01</span>
-        <h2 class="section__title">Education</h2>
-      </div>
-      <div class="section__body">
-        <div class="edu">
-          <article class="edu__card">
-            <div class="edu__dot edu__dot--live"></div>
-            <div class="edu__time">2026.09 – 2028.01</div>
-            <div class="edu__info">
-              <h3>The University of Hong Kong</h3>
-              <p class="edu__degree">M.Sc. in Low-Altitude Technology</p>
-              <p class="edu__zh">香港大学 · 低空技术硕士</p>
-            </div>
-          </article>
-          <article class="edu__card">
-            <div class="edu__dot"></div>
-            <div class="edu__time">2022.09 – 2026.06</div>
-            <div class="edu__info">
-              <h3>Wuhan University of Technology</h3>
-              <p class="edu__degree">B.Eng. in Traffic Engineering</p>
-              <p class="edu__zh">武汉理工大学 · 交通工程本科</p>
-            </div>
-          </article>
+    <!-- ========== Sidebar ========== -->
+    <aside class="sidebar">
+      <div class="sidebar__card">
+        <div class="sidebar__avatar">
+          <img src="assets/avatar.jpg" alt="杨启明">
         </div>
-      </div>
-    </section>
-
-    <!-- ========== Research ========== -->
-    <section id="research" class="section">
-      <div class="section__head">
-        <span class="section__num">02</span>
-        <h2 class="section__title">Research Interests</h2>
-      </div>
-      <div class="section__body">
-        <div class="research-grid">
-          <article class="r-card r-card--cyan">
-            <div class="r-card__icon"><i class="fa-solid fa-brain"></i></div>
-            <h3>多智能体强化学习</h3>
-            <p>PPO / HAPPO / M3DDPG 在交通流控制与无人机协同中的应用</p>
-          </article>
-          <article class="r-card r-card--violet">
-            <div class="r-card__icon"><i class="fa-solid fa-car-side"></i></div>
-            <h3>智能网联交通 V2X</h3>
-            <p>异构交通流协同控制、自动驾驶编队、车路协同感知</p>
-          </article>
-          <article class="r-card r-card--cyan">
-            <div class="r-card__icon"><i class="fa-solid fa-helicopter-symbol"></i></div>
-            <h3>低空技术 / UAV</h3>
-            <p>多无人机边缘计算中的轨迹规划与任务卸载联合优化</p>
-          </article>
-          <article class="r-card r-card--violet">
-            <div class="r-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <h3>交通安全</h3>
-            <p>跟驰模型优化、行人冲突监测预警、事故严重程度建模</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== Publications ========== -->
-    <section id="publications" class="section">
-      <div class="section__head">
-        <span class="section__num">03</span>
-        <h2 class="section__title">Publications</h2>
-      </div>
-      <div class="section__body">
-
-        <h3 class="subhead">Published / Accepted</h3>
-
-        <article class="pub">
-          <div class="pub__row">
-            <span class="badge badge--ei">EI</span>
-            <div class="pub__content">
-              <h4>V2X-Collaborative Heterogeneous Traffic Flow Control Method for High-Flow Freeways Based on Optimized PPO Algorithm</h4>
-              <p class="pub__meta"><strong>AIAT 2026</strong> · Springer LNEE · <em>1st author</em></p>
-              <button class="pub__btn" aria-expanded="false">Abstract</button>
-            </div>
-          </div>
-          <div class="pub__abs" hidden>
-            <p>通过对 PPO 算法进行优化，结合路侧传感设备实现多维参数感知，实时控制高速自动驾驶车辆编组，达到路段整体的最大通行效率，同时实现较低油耗与碳排放。</p>
-          </div>
-        </article>
-
-        <article class="pub">
-          <div class="pub__row">
-            <span class="badge badge--conf">WTC</span>
-            <div class="pub__content">
-              <h4>Car-Following Model Parameter Dynamic Optimization Research</h4>
-              <p class="pub__meta"><strong>WTC 2025</strong> 世界交通运输大会 · <em>1st author</em></p>
-              <button class="pub__btn" aria-expanded="false">Abstract</button>
-            </div>
-          </div>
-          <div class="pub__abs" hidden>
-            <p>通过对比分析多种跟驰模型，优化跟驰模型的参数动态，并验证其有效性。</p>
-          </div>
-        </article>
-
-        <article class="pub">
-          <div class="pub__row">
-            <span class="badge badge--q2">Q2</span>
-            <div class="pub__content">
-              <h4>Robust Minimax Multi-Agent Deep Deterministic Policy Gradient for Reward Uncertainty</h4>
-              <p class="pub__meta"><strong>Applied Intelligence</strong> · <em>2nd author</em></p>
-              <button class="pub__btn" aria-expanded="false">Abstract</button>
-            </div>
-          </div>
-          <div class="pub__abs" hidden>
-            <p>融合纳什均衡与极小极大优化，提出 Robust-M3DDPG 框架，通过鲁棒马尔可夫博弈和多智能体对抗学习，增强智能体在动态对抗环境中的策略鲁棒性和稳定性。</p>
-          </div>
-        </article>
-
-        <article class="pub">
-          <div class="pub__row">
-            <span class="badge badge--q1">Q1</span>
-            <div class="pub__content">
-              <h4>Partially temporally constrained modeling of speeding crash injury severities on freeways and non-freeways</h4>
-              <p class="pub__meta"><strong>Accident Analysis and Prevention</strong> · <em>3rd author</em></p>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ========== Patents ========== -->
-    <section id="patents" class="section">
-      <div class="section__head">
-        <span class="section__num">04</span>
-        <h2 class="section__title">Patents & Copyrights</h2>
-      </div>
-      <div class="section__body">
-        <div class="patent-list">
-          <div class="patent patent--granted">
-            <span class="patent__tag">已授权</span>
-            <div>
-              <h4>一种移动式路侧行人交通冲突监测与预警装置及方法</h4>
-              <p>CN202410489742.9 · 学生一作</p>
-            </div>
-          </div>
-          <div class="patent patent--granted">
-            <span class="patent__tag">已授权</span>
-            <div>
-              <h4>一种多模态 VR 隧道火灾仿真实验设备协同控制方法</h4>
-              <p>CN202511132538.2 · 学生一作</p>
-            </div>
-          </div>
-          <div class="patent patent--granted">
-            <span class="patent__tag">已授权</span>
-            <div>
-              <h4>无人对接作业平台协同方法和相关设备</h4>
-              <p>CN202511641547.4 · 学生二作</p>
-            </div>
-          </div>
-        </div>
-        <div class="soft-list">
-          <div class="soft">
-            <i class="fa-solid fa-code"></i>
-            <div>
-              <strong>龙门式起重机智能控制系统 V1.0</strong>
-              <span>2025SR1005643</span>
-            </div>
-          </div>
-          <div class="soft">
-            <i class="fa-solid fa-code"></i>
-            <div>
-              <strong>大型货车转向内轮轨迹动态预警系统 V1.0</strong>
-              <span>2025SR1618070</span>
-            </div>
-          </div>
-          <div class="soft">
-            <i class="fa-solid fa-code"></i>
-            <div>
-              <strong>我的生活助手——校园场景个性化AI助手 V1.0</strong>
-              <span>2025SR1706356</span>
-            </div>
-          </div>
-          <div class="soft">
-            <i class="fa-solid fa-code"></i>
-            <div>
-              <strong>基于LLM自然语言AI数据库管理系统 V1.0</strong>
-              <span>2025SR1710178</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== Certifications ========== -->
-    <section id="certifications" class="section">
-      <div class="section__head">
-        <span class="section__num">05</span>
-        <h2 class="section__title">Certifications</h2>
-      </div>
-      <div class="section__body">
-        <div class="cert-grid">
-          <article class="cert-card">
-            <div class="cert-card__icon"><i class="fa-solid fa-plane-up"></i></div>
-            <div class="cert-card__body">
-              <h3>CAAC 轻型民用无人驾驶航空器<br>安全操控理论培训合格证明</h3>
-              <p class="cert-card__issuer">中国民用航空局</p>
-              <p class="cert-card__meta">编号 202404200835 · 2024.04</p>
-            </div>
-          </article>
-          <article class="cert-card">
-            <div class="cert-card__icon"><i class="fa-solid fa-helicopter-symbol"></i></div>
-            <div class="cert-card__body">
-              <h3>AOPA 民用无人机驾驶员合格证</h3>
-              <p class="cert-card__issuer">中国航空器拥有者及驾驶员协会</p>
-              <p class="cert-card__meta">2024.04.20 签发</p>
-            </div>
-          </article>
-          <article class="cert-card">
-            <div class="cert-card__icon"><i class="fa-solid fa-plane"></i></div>
-            <div class="cert-card__body">
-              <h3>DJI 农用无人机系统操作手合格证</h3>
-              <p class="cert-card__issuer">深圳市大疆创新科技有限公司</p>
-              <p class="cert-card__meta">CNT36080311100103 · 有效期至 2028.03</p>
-            </div>
-          </article>
-          <article class="cert-card">
-            <div class="cert-card__icon"><i class="fa-solid fa-certificate"></i></div>
-            <div class="cert-card__body">
-              <h3>IICT 无人机操控工程师</h3>
-              <p class="cert-card__issuer">工信人才岗位能力评价</p>
-              <p class="cert-card__meta">岗位能力评价证书</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== Awards ========== -->
-    <section id="awards" class="section">
-      <div class="section__head">
-        <span class="section__num">06</span>
-        <h2 class="section__title">Awards</h2>
-      </div>
-      <div class="section__body">
-        <div class="awards">
-          <div class="award">
-            <span class="award__level award__level--n">国家级</span>
-            <div class="award__body">
-              <strong>"CIMC" 中国智能制造挑战赛</strong>
-              <span>二等奖 · 第一作者</span>
-            </div>
-          </div>
-          <div class="award">
-            <span class="award__level award__level--n">国家级</span>
-            <div class="award__body">
-              <strong>"互联网+" 大学生创新创业大赛</strong>
-              <span>铜奖</span>
-            </div>
-          </div>
-          <div class="award">
-            <span class="award__level award__level--n">全国赛</span>
-            <div class="award__body">
-              <strong>中国青年志愿服务公益创业赛</strong>
-              <span>银奖 · 第二作者</span>
-            </div>
-          </div>
-          <div class="award">
-            <span class="award__level award__level--p">华中赛区</span>
-            <div class="award__body">
-              <strong>2025 中国高校计算机大赛 · 人工智能创意赛</strong>
-              <span>三等奖 · 第二作者</span>
-            </div>
-          </div>
-          <div class="award">
-            <span class="award__level award__level--p">省级</span>
-            <div class="award__body">
-              <strong>中国大学生机械工程创新创意大赛</strong>
-              <span>物流技术创意赛 · 一等奖</span>
-            </div>
-          </div>
-          <div class="award">
-            <span class="award__level award__level--p">省级</span>
-            <div class="award__body">
-              <strong>中国大学生计算机设计大赛</strong>
-              <span>三等奖</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== Experience ========== -->
-    <section id="experience" class="section">
-      <div class="section__head">
-        <span class="section__num">07</span>
-        <h2 class="section__title">Experience</h2>
-      </div>
-      <div class="section__body">
-        <div class="exp">
-          <article class="exp__card">
-            <div class="exp__top">
-              <h3>京东物流 · JDY 供应链规划</h3>
-              <span class="exp__time">2025.07 – 2025.11</span>
-            </div>
-            <p class="exp__org">北京京东世纪贸易有限公司</p>
-            <ul>
-              <li>基于"天策"平台分析供应链成本与时效，响应"灭霸"政策实现降本增效</li>
-              <li>深入一线轮岗，完成仓库工艺规划设计，优化功能分区与设备布局</li>
-            </ul>
-          </article>
-          <article class="exp__card">
-            <div class="exp__top">
-              <h3>学院学生会 · 执行主席</h3>
-              <span class="exp__time">2024.06 – 2025.06</span>
-            </div>
-            <p class="exp__org">武汉理工大学交通与物流工程学院</p>
-            <ul>
-              <li>主办"挑战杯"院级选拔赛，承办国家级 A 类竞赛省赛</li>
-              <li>统筹跨年晚会等大型活动，服务学院 8000+ 师生</li>
-            </ul>
-          </article>
-        </div>
-
-        <h3 class="subhead">Academic Service</h3>
-        <ul class="service">
-          <li>Reviewer · <em>Scientific Reports</em> (Nature Portfolio)</li>
-          <li>Member · 中国公路学会</li>
-          <li>Member · 中国机械工程学会</li>
+        <h1 class="sidebar__name">杨启明</h1>
+        <p class="sidebar__name-en">Qiming Yang</p>
+        <p class="sidebar__bio">
+          M.Sc. · Low-Altitude Technology<br>
+          The University of Hong Kong
+        </p>
+        <ul class="sidebar__links">
+          <li><i class="fa-solid fa-location-dot"></i><span>Wuhan → Hong Kong</span></li>
+          <li><a href="mailto:340585@whut.edu.cn"><i class="fa-solid fa-envelope"></i><span>340585@whut.edu.cn</span></a></li>
+          <li><a href="mailto:u3678199@connect.hku.hk"><i class="fa-solid fa-envelope"></i><span>u3678199@connect.hku.hk</span></a></li>
+          <li><a href="https://github.com/Qiming-Y" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
         </ul>
-      </div>
-    </section>
-
-    <!-- ========== Contact ========== -->
-    <section id="contact" class="section section--contact">
-      <div class="section__head">
-        <span class="section__num">08</span>
-        <h2 class="section__title">Contact</h2>
-      </div>
-      <div class="section__body">
-        <div class="contact-grid">
-          <a href="mailto:340585@whut.edu.cn" class="c-card">
-            <i class="fa-solid fa-envelope"></i>
-            <span class="c-card__label">WHUT</span>
-            <strong>340585@whut.edu.cn</strong>
-          </a>
-          <a href="mailto:u3678199@connect.hku.hk" class="c-card">
-            <i class="fa-solid fa-envelope"></i>
-            <span class="c-card__label">HKU</span>
-            <strong>u3678199@connect.hku.hk</strong>
-          </a>
-          <a href="https://github.com/Qiming-Y" target="_blank" rel="noopener" class="c-card">
-            <i class="fa-brands fa-github"></i>
-            <span class="c-card__label">GitHub</span>
-            <strong>Qiming-Y</strong>
-          </a>
+        <div class="sidebar__tags">
+          <span class="tag">MARL</span>
+          <span class="tag">V2X</span>
+          <span class="tag">UAV</span>
+          <span class="tag">ITS</span>
         </div>
       </div>
-    </section>
+    </aside>
 
-  </main>
+    <!-- ========== Main ========== -->
+    <main class="content">
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <h2 class="section__title">Education</h2>
+        <div class="section__body">
+          <div class="edu">
+            <article class="edu__item">
+              <div class="edu__time">2026.09 – 2028.01</div>
+              <div class="edu__info">
+                <h3>The University of Hong Kong</h3>
+                <p class="edu__degree">M.Sc. in Low-Altitude Technology</p>
+                <p class="edu__zh">香港大学 · 低空技术硕士</p>
+              </div>
+            </article>
+            <article class="edu__item">
+              <div class="edu__time">2022.09 – 2026.06</div>
+              <div class="edu__info">
+                <h3>Wuhan University of Technology</h3>
+                <p class="edu__degree">B.Eng. in Traffic Engineering</p>
+                <p class="edu__zh">武汉理工大学 · 交通工程本科</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research -->
+      <section id="research" class="section">
+        <h2 class="section__title">Research Interests</h2>
+        <div class="section__body">
+          <div class="research-grid">
+            <article class="r-card">
+              <div class="r-card__icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>多智能体强化学习</h3>
+              <p>PPO / HAPPO / M3DDPG 在交通流控制与无人机协同中的应用</p>
+            </article>
+            <article class="r-card">
+              <div class="r-card__icon"><i class="fa-solid fa-car-side"></i></div>
+              <h3>智能网联交通 V2X</h3>
+              <p>异构交通流协同控制、自动驾驶编队、车路协同感知</p>
+            </article>
+            <article class="r-card">
+              <div class="r-card__icon"><i class="fa-solid fa-helicopter-symbol"></i></div>
+              <h3>低空技术 / UAV</h3>
+              <p>多无人机边缘计算中的轨迹规划与任务卸载联合优化</p>
+            </article>
+            <article class="r-card">
+              <div class="r-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3>交通安全</h3>
+              <p>跟驰模型优化、行人冲突监测预警、事故严重程度建模</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications" class="section">
+        <h2 class="section__title">Publications</h2>
+        <div class="section__body">
+
+          <article class="pub">
+            <div class="pub__row">
+              <span class="badge badge--ei">EI</span>
+              <div class="pub__content">
+                <h4>V2X-Collaborative Heterogeneous Traffic Flow Control Method for High-Flow Freeways Based on Optimized PPO Algorithm</h4>
+                <p class="pub__meta"><strong>AIAT 2026</strong> · Springer LNEE · <em>1st author</em></p>
+                <button class="pub__btn" aria-expanded="false">Abstract</button>
+              </div>
+            </div>
+            <div class="pub__abs" hidden>
+              <p>通过对 PPO 算法进行优化，结合路侧传感设备实现多维参数感知，实时控制高速自动驾驶车辆编组，达到路段整体的最大通行效率，同时实现较低油耗与碳排放。</p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <div class="pub__row">
+              <span class="badge badge--conf">WTC</span>
+              <div class="pub__content">
+                <h4>Car-Following Model Parameter Dynamic Optimization Research</h4>
+                <p class="pub__meta"><strong>WTC 2025</strong> 世界交通运输大会 · <em>1st author</em></p>
+                <button class="pub__btn" aria-expanded="false">Abstract</button>
+              </div>
+            </div>
+            <div class="pub__abs" hidden>
+              <p>通过对比分析多种跟驰模型，优化跟驰模型的参数动态，并验证其有效性。</p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <div class="pub__row">
+              <span class="badge badge--q2">Q2</span>
+              <div class="pub__content">
+                <h4>Robust Minimax Multi-Agent Deep Deterministic Policy Gradient for Reward Uncertainty</h4>
+                <p class="pub__meta"><strong>Applied Intelligence</strong> · <em>2nd author</em></p>
+                <button class="pub__btn" aria-expanded="false">Abstract</button>
+              </div>
+            </div>
+            <div class="pub__abs" hidden>
+              <p>融合纳什均衡与极小极大优化，提出 Robust-M3DDPG 框架，通过鲁棒马尔可夫博弈和多智能体对抗学习，增强智能体在动态对抗环境中的策略鲁棒性和稳定性。</p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <div class="pub__row">
+              <span class="badge badge--q1">Q1</span>
+              <div class="pub__content">
+                <h4>Partially temporally constrained modeling of speeding crash injury severities on freeways and non-freeways</h4>
+                <p class="pub__meta"><strong>Accident Analysis and Prevention</strong> · <em>3rd author</em></p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Patents -->
+      <section id="patents" class="section">
+        <h2 class="section__title">Patents & Copyrights</h2>
+        <div class="section__body">
+          <div class="patent-list">
+            <div class="patent patent--granted">
+              <span class="patent__tag">已授权</span>
+              <div>
+                <h4>一种移动式路侧行人交通冲突监测与预警装置及方法</h4>
+                <p>CN202410489742.9 · 学生一作</p>
+              </div>
+            </div>
+            <div class="patent patent--granted">
+              <span class="patent__tag">已授权</span>
+              <div>
+                <h4>一种多模态 VR 隧道火灾仿真实验设备协同控制方法</h4>
+                <p>CN202511132538.2 · 学生一作</p>
+              </div>
+            </div>
+            <div class="patent patent--granted">
+              <span class="patent__tag">已授权</span>
+              <div>
+                <h4>无人对接作业平台协同方法和相关设备</h4>
+                <p>CN202511641547.4 · 学生二作</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="subhead">软件著作权</h3>
+          <div class="soft-list">
+            <div class="soft">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <strong>龙门式起重机智能控制系统 V1.0</strong>
+                <span>2025SR1005643</span>
+              </div>
+            </div>
+            <div class="soft">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <strong>大型货车转向内轮轨迹动态预警系统 V1.0</strong>
+                <span>2025SR1618070</span>
+              </div>
+            </div>
+            <div class="soft">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <strong>我的生活助手——校园场景个性化AI助手 V1.0</strong>
+                <span>2025SR1706356</span>
+              </div>
+            </div>
+            <div class="soft">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <strong>基于LLM自然语言AI数据库管理系统 V1.0</strong>
+                <span>2025SR1710178</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section">
+        <h2 class="section__title">Certifications</h2>
+        <div class="section__body">
+          <div class="cert-grid">
+            <article class="cert-card">
+              <div class="cert-card__icon"><i class="fa-solid fa-plane-up"></i></div>
+              <div>
+                <h4>CAAC 轻型民用无人驾驶航空器安全操控理论培训合格证明</h4>
+                <p>中国民用航空局 · 2024.04</p>
+              </div>
+            </article>
+            <article class="cert-card">
+              <div class="cert-card__icon"><i class="fa-solid fa-helicopter-symbol"></i></div>
+              <div>
+                <h4>AOPA 民用无人机驾驶员合格证</h4>
+                <p>中国航空器拥有者及驾驶员协会 · 2024.04</p>
+              </div>
+            </article>
+            <article class="cert-card">
+              <div class="cert-card__icon"><i class="fa-solid fa-plane"></i></div>
+              <div>
+                <h4>DJI 农用无人机系统操作手合格证</h4>
+                <p>深圳市大疆创新科技有限公司 · 有效期至 2028.03</p>
+              </div>
+            </article>
+            <article class="cert-card">
+              <div class="cert-card__icon"><i class="fa-solid fa-certificate"></i></div>
+              <div>
+                <h4>IICT 无人机操控工程师</h4>
+                <p>工信人才岗位能力评价</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conferences -->
+      <section id="conferences" class="section">
+        <h2 class="section__title">参会记录</h2>
+        <div class="section__body">
+          <div class="conf-list">
+            <div class="conf">
+              <span class="conf__year">2026</span>
+              <div class="conf__info">
+                <h4>AIAT 人工智能与自主式交通国际学术会议</h4>
+                <p>武汉 · 论文报告</p>
+              </div>
+            </div>
+            <div class="conf">
+              <span class="conf__year">2025</span>
+              <div class="conf__info">
+                <h4>WTC 世界交通运输大会</h4>
+                <p>苏州 · 墙报演讲</p>
+              </div>
+            </div>
+            <div class="conf">
+              <span class="conf__year">2025</span>
+              <div class="conf__info">
+                <h4>先进制造青年科技工作者论坛</h4>
+                <p>上海</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Awards -->
+      <section id="awards" class="section">
+        <h2 class="section__title">Awards</h2>
+        <div class="section__body">
+          <div class="awards">
+            <div class="award">
+              <span class="award__level award__level--n">国家级</span>
+              <div class="award__body">
+                <strong>"CIMC" 中国智能制造挑战赛</strong>
+                <span>二等奖 · 第一作者</span>
+              </div>
+            </div>
+            <div class="award">
+              <span class="award__level award__level--n">国家级</span>
+              <div class="award__body">
+                <strong>"互联网+" 大学生创新创业大赛</strong>
+                <span>铜奖</span>
+              </div>
+            </div>
+            <div class="award">
+              <span class="award__level award__level--n">全国赛</span>
+              <div class="award__body">
+                <strong>中国青年志愿服务公益创业赛</strong>
+                <span>银奖 · 第二作者</span>
+              </div>
+            </div>
+            <div class="award">
+              <span class="award__level award__level--p">省级</span>
+              <div class="award__body">
+                <strong>2025 中国高校计算机大赛 · 人工智能创意赛</strong>
+                <span>华中赛区三等奖 · 第二作者</span>
+              </div>
+            </div>
+            <div class="award">
+              <span class="award__level award__level--p">省级</span>
+              <div class="award__body">
+                <strong>中国大学生机械工程创新创意大赛</strong>
+                <span>物流技术创意赛 · 一等奖</span>
+              </div>
+            </div>
+            <div class="award">
+              <span class="award__level award__level--p">省级</span>
+              <div class="award__body">
+                <strong>中国大学生计算机设计大赛</strong>
+                <span>三等奖</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <h2 class="section__title">Experience</h2>
+        <div class="section__body">
+          <div class="exp">
+            <article class="exp__card">
+              <div class="exp__top">
+                <h3>京东物流 · JDY 供应链规划</h3>
+                <span class="exp__time">2025.07 – 2025.11</span>
+              </div>
+              <p class="exp__org">北京京东世纪贸易有限公司</p>
+              <ul>
+                <li>基于"天策"平台分析供应链成本与时效，响应"灭霸"政策实现降本增效</li>
+                <li>深入一线轮岗，完成仓库工艺规划设计，优化功能分区与设备布局</li>
+              </ul>
+            </article>
+            <article class="exp__card">
+              <div class="exp__top">
+                <h3>学院学生会 · 执行主席</h3>
+                <span class="exp__time">2024.06 – 2025.06</span>
+              </div>
+              <p class="exp__org">武汉理工大学交通与物流工程学院</p>
+              <ul>
+                <li>主办"挑战杯"院级选拔赛，承办国家级 A 类竞赛省赛</li>
+                <li>统筹跨年晚会等大型活动，服务学院 8000+ 师生</li>
+              </ul>
+            </article>
+          </div>
+
+          <h3 class="subhead">Academic Service</h3>
+          <ul class="service">
+            <li>Reviewer · <em>Scientific Reports</em> (Nature Portfolio)</li>
+            <li>Member · 中国公路学会</li>
+            <li>Member · 中国机械工程学会</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h2 class="section__title">Contact</h2>
+        <div class="section__body">
+          <div class="contact-grid">
+            <a href="mailto:340585@whut.edu.cn" class="c-card">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="c-card__label">WHUT</span>
+              <strong>340585@whut.edu.cn</strong>
+            </a>
+            <a href="mailto:u3678199@connect.hku.hk" class="c-card">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="c-card__label">HKU</span>
+              <strong>u3678199@connect.hku.hk</strong>
+            </a>
+            <a href="https://github.com/Qiming-Y" target="_blank" rel="noopener" class="c-card">
+              <i class="fa-brands fa-github"></i>
+              <span class="c-card__label">GitHub</span>
+              <strong>Qiming-Y</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
 
   <footer class="footer">
     <p>© 2026 杨启明 · Qiming Yang</p>
