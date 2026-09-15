@@ -4,22 +4,22 @@
    ============================================ */
 
 :root {
-  --void:    #070b12;
-  --deep:    #0c121c;
-  --panel:   #111a27;
-  --panel-2: #162032;
-  --ink:     #e6edf6;
-  --haze:    #7b8fa6;
-  --dim:     #4a5a6e;
-  --cyan:    #22d3ee;
-  --cyan-dim: rgba(34, 211, 238, 0.14);
-  --violet:  #a78bfa;
-  --violet-dim: rgba(167, 139, 250, 0.14);
-  --amber:   #fbbf24;
-  --green:   #34d399;
+  --void:    #0e1117;
+  --deep:    #141a24;
+  --panel:   #1a2230;
+  --panel-2: #1f2937;
+  --ink:     #e8ecf2;
+  --haze:    #8b97a8;
+  --dim:     #5c6b7e;
+  --cyan:    #5b9fd4;
+  --cyan-dim: rgba(91, 159, 212, 0.12);
+  --violet:  #8b9dc3;
+  --violet-dim: rgba(139, 157, 195, 0.12);
+  --amber:   #d4a853;
+  --green:   #5aab7e;
   --rule:    rgba(148, 163, 184, 0.1);
-  --glow-cyan: 0 0 24px rgba(34, 211, 238, 0.25);
-  --glow-violet: 0 0 24px rgba(167, 139, 250, 0.25);
+  --glow-cyan: 0 2px 12px rgba(91, 159, 212, 0.15);
+  --glow-violet: 0 2px 12px rgba(139, 157, 195, 0.15);
 
   --font-display: Georgia, 'Times New Roman', 'Songti SC', serif;
   --font-body: 'SF Pro Text', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
@@ -27,7 +27,7 @@
 
   --nav-h: 60px;
   --max: 880px;
-  --radius: 12px;
+  --radius: 10px;
 }
 
 /* ---- Reset ---- */
@@ -64,16 +64,16 @@ button { font-family: inherit; cursor: pointer; }
 }
 .bg-glow {
   position: fixed; z-index: 0; pointer-events: none;
-  width: 520px; height: 520px; border-radius: 50%;
-  filter: blur(100px); opacity: .35;
+  width: 480px; height: 480px; border-radius: 50%;
+  filter: blur(120px); opacity: .18;
 }
 .bg-glow--a {
-  top: -180px; left: -120px;
-  background: radial-gradient(circle, rgba(34,211,238,.45), transparent 70%);
+  top: -160px; left: -100px;
+  background: radial-gradient(circle, rgba(91,159,212,.4), transparent 70%);
 }
 .bg-glow--b {
-  top: 20%; right: -200px;
-  background: radial-gradient(circle, rgba(167,139,250,.35), transparent 70%);
+  top: 25%; right: -180px;
+  background: radial-gradient(circle, rgba(139,157,195,.3), transparent 70%);
 }
 
 /* ---- Nav ---- */
@@ -124,9 +124,9 @@ button { font-family: inherit; cursor: pointer; }
 .nav__link--cta {
   margin-left: 6px;
   background: var(--cyan-dim); color: var(--cyan) !important;
-  border: 1px solid rgba(34,211,238,.25);
+  border: 1px solid rgba(91,159,212,.25);
 }
-.nav__link--cta:hover { background: rgba(34,211,238,.22); }
+.nav__link--cta:hover { background: rgba(91,159,212,.22); }
 
 /* ---- Hero ---- */
 .hero {
@@ -140,25 +140,28 @@ button { font-family: inherit; cursor: pointer; }
   position: relative; width: 120px; height: 120px; margin-bottom: 28px;
 }
 .hero__ring {
-  position: absolute; inset: -4px; border-radius: 50%;
-  background: conic-gradient(from 0deg, var(--cyan), var(--violet), var(--cyan));
-  animation: spin 6s linear infinite;
-  opacity: .85;
+  position: absolute; inset: -3px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--cyan), var(--violet));
+  opacity: .5;
 }
 .hero__ring::after {
-  content: ''; position: absolute; inset: 4px;
+  content: ''; position: absolute; inset: 3px;
   border-radius: 50%; background: var(--void);
 }
 .hero__avatar {
-  position: absolute; inset: 8px; border-radius: 50%;
+  position: absolute; inset: 6px; border-radius: 50%;
   background: linear-gradient(145deg, var(--panel-2), var(--panel));
   display: grid; place-items: center;
   font-family: var(--font-display);
   font-size: 44px; color: var(--cyan);
   z-index: 1;
-  box-shadow: inset 0 0 30px rgba(34,211,238,.08);
 }
-@keyframes spin { to { transform: rotate(360deg); } }
+.hero__avatar--photo {
+  object-fit: cover;
+  object-position: center top;
+  font-size: 0;
+  box-shadow: none;
+}
 
 .hero__name { margin-bottom: 12px; }
 .hero__name-zh {
@@ -167,7 +170,7 @@ button { font-family: inherit; cursor: pointer; }
   font-size: clamp(36px, 6vw, 52px);
   font-weight: 700;
   letter-spacing: .06em;
-  background: linear-gradient(135deg, #fff 30%, var(--cyan) 100%);
+  background: linear-gradient(135deg, #fff 20%, var(--cyan) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -195,11 +198,11 @@ button { font-family: inherit; cursor: pointer; }
 }
 .chip--cyan {
   background: var(--cyan-dim); color: var(--cyan);
-  border-color: rgba(34,211,238,.2);
+  border-color: rgba(91,159,212,.25);
 }
 .chip--violet {
   background: var(--violet-dim); color: var(--violet);
-  border-color: rgba(167,139,250,.2);
+  border-color: rgba(139,157,195,.25);
 }
 
 .hero__actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
@@ -210,20 +213,21 @@ button { font-family: inherit; cursor: pointer; }
   transition: transform .15s, box-shadow .15s, background .15s, border-color .15s;
 }
 .btn--primary {
-  background: linear-gradient(135deg, var(--cyan), #06b6d4);
+  background: var(--cyan);
   color: var(--void); border: none;
 }
 .btn--primary:hover {
   color: var(--void);
   box-shadow: var(--glow-cyan);
   transform: translateY(-1px);
+  filter: brightness(1.1);
 }
 .btn--ghost {
   background: transparent; color: var(--ink);
   border: 1px solid var(--rule);
 }
 .btn--ghost:hover {
-  border-color: rgba(34,211,238,.4);
+  border-color: rgba(91,159,212,.4);
   color: var(--cyan);
   transform: translateY(-1px);
 }
@@ -299,7 +303,7 @@ button { font-family: inherit; cursor: pointer; }
 .edu__dot--live {
   border-color: var(--cyan);
   background: var(--cyan);
-  box-shadow: 0 0 12px rgba(34,211,238,.5);
+  box-shadow: 0 0 8px rgba(91,159,212,.35);
 }
 .edu__time {
   font-family: var(--font-mono); font-size: 12px;
@@ -322,11 +326,11 @@ button { font-family: inherit; cursor: pointer; }
 }
 .r-card:hover { transform: translateY(-3px); }
 .r-card--cyan:hover {
-  border-color: rgba(34,211,238,.35);
+  border-color: rgba(91,159,212,.3);
   box-shadow: var(--glow-cyan);
 }
 .r-card--violet:hover {
-  border-color: rgba(167,139,250,.35);
+  border-color: rgba(139,157,195,.3);
   box-shadow: var(--glow-violet);
 }
 .r-card__icon {
@@ -381,7 +385,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .pub__btn:hover {
   background: var(--cyan-dim);
-  border-color: rgba(34,211,238,.3);
+  border-color: rgba(91,159,212,.3);
 }
 .pub__abs {
   margin-top: 12px; padding: 14px 16px;
@@ -427,6 +431,37 @@ button { font-family: inherit; cursor: pointer; }
 .soft i { color: var(--violet); flex-shrink: 0; }
 .soft strong { display: block; color: var(--ink); font-size: 13.5px; font-weight: 600; }
 .soft span { font-family: var(--font-mono); font-size: 11.5px; color: var(--dim); }
+
+/* ---- Certifications ---- */
+.cert-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+}
+.cert-card {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 18px 16px;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  transition: border-color .2s;
+}
+.cert-card:hover { border-color: rgba(91,159,212,.3); }
+.cert-card__icon {
+  flex-shrink: 0;
+  width: 40px; height: 40px; border-radius: 10px;
+  background: var(--cyan-dim); color: var(--cyan);
+  display: grid; place-items: center;
+  font-size: 16px;
+}
+.cert-card__body h3 {
+  font-size: 13.5px; font-weight: 600; line-height: 1.4;
+  margin-bottom: 4px;
+}
+.cert-card__issuer {
+  font-size: 12px; color: var(--cyan); margin-bottom: 2px;
+}
+.cert-card__meta {
+  font-size: 11.5px; color: var(--dim); font-family: var(--font-mono);
+}
 
 /* ---- Awards ---- */
 .awards { display: flex; flex-direction: column; gap: 8px; }
@@ -503,7 +538,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .c-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(34,211,238,.35);
+  border-color: rgba(91,159,212,.35);
   box-shadow: var(--glow-cyan);
   color: var(--ink);
 }
@@ -562,6 +597,7 @@ button { font-family: inherit; cursor: pointer; }
   .edu__info { grid-column: 2; }
 
   .research-grid { grid-template-columns: 1fr; }
+  .cert-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
 
   .section__title { font-size: 22px; }
