@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>杨启明 · Qiming Yang</title>
-  <meta name="description" content="Qiming Yang — Low-Altitude Technology @ HKU · MARL · V2X · UAV">
+  <title>杨启明 · Qiming Yang | Intelligent Transportation & Low-Altitude Systems</title>
+  <meta name="description" content="Qiming Yang — MSc Candidate at HKU researching intelligent transportation, V2X, multi-agent reinforcement learning, UAVs, and low-altitude systems.">
+  <meta name="author" content="Qiming Yang">
+  <meta name="theme-color" content="#182536">
+  <link rel="canonical" href="https://qiming-y.github.io/">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- ========== Nav ========== -->
   <header class="nav">
     <div class="nav__inner">
       <a href="#top" class="nav__logo">Qiming Yang</a>
       <button class="nav__burger" aria-label="菜单" aria-expanded="false">
         <span></span><span></span>
       </button>
-      <nav class="nav__menu">
+      <nav class="nav__menu" aria-label="Primary navigation">
         <a href="#education" class="nav__link">Education</a>
         <a href="#research" class="nav__link">Research</a>
         <a href="#publications" class="nav__link">Publications</a>
@@ -32,490 +35,135 @@
   </header>
 
   <div class="page" id="top">
-
-    <!-- ========== Sidebar ========== -->
-    <aside class="sidebar">
+    <aside class="sidebar" aria-label="Profile">
       <div class="sidebar__card">
-        <div class="sidebar__avatar">
-          <img src="assets/avatar.jpg" alt="杨启明">
-        </div>
+        <div class="sidebar__avatar"><img src="assets/avatar.jpg" alt="杨启明 / Qiming Yang"></div>
         <h1 class="sidebar__name">杨启明</h1>
         <p class="sidebar__name-en">Qiming Yang</p>
-        <p class="sidebar__bio">
-          MSc · Low-Altitude Technology<br>
-          The University of Hong Kong
-        </p>
+        <p class="sidebar__bio">MSc Candidate · Low-Altitude Technology<br>The University of Hong Kong</p>
         <ul class="sidebar__links">
-          <li><i class="fa-solid fa-location-dot"></i><span>Wuhan → Hong Kong</span></li>
-          <li><a href="mailto:340585@whut.edu.cn"><i class="fa-solid fa-envelope"></i><span>340585@whut.edu.cn</span></a></li>
-          <li><a href="mailto:u3678199@connect.hku.hk"><i class="fa-solid fa-envelope"></i><span>u3678199@connect.hku.hk</span></a></li>
-          <li><a href="https://github.com/Qiming-Y" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Wuhan → Hong Kong</span></li>
+          <li><a href="mailto:340585@whut.edu.cn"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>340585@whut.edu.cn</span></a></li>
+          <li><a href="mailto:u3678199@connect.hku.hk"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>u3678199@connect.hku.hk</span></a></li>
+          <li><a href="https://github.com/Qiming-Y" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
         </ul>
-        <div class="sidebar__tags">
-          <span class="tag">MARL</span>
-          <span class="tag">V2X</span>
-          <span class="tag">UAV</span>
-          <span class="tag">ITS</span>
+        <div class="sidebar__tags" aria-label="Research keywords">
+          <span class="tag">MARL</span><span class="tag">V2X</span><span class="tag">UAV</span><span class="tag">ITS</span>
         </div>
       </div>
     </aside>
 
-    <!-- ========== Main ========== -->
-    <main class="content">
+    <main id="main-content" class="content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Researcher · Intelligent Transportation · Low-Altitude Systems</p>
+          <h2 id="hero-title" class="hero__title">Building safer, smarter mobility systems across roads and skies.</h2>
+          <p class="hero__lead">I study multi-agent reinforcement learning for connected and autonomous mobility, with current work spanning V2X traffic control, UAV trajectory planning, and edge-computing task offloading.</p>
+          <div class="hero__actions">
+            <a class="hero__btn hero__btn--primary" href="#publications"><i class="fa-solid fa-book-open" aria-hidden="true"></i> View publications</a>
+            <a class="hero__btn" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Get in touch</a>
+          </div>
+          <div class="hero__facts" aria-label="Academic profile at a glance">
+            <div class="hero__fact"><strong>4</strong><span>published / accepted</span></div>
+            <div class="hero__fact"><strong>5</strong><span>under review</span></div>
+            <div class="hero__fact"><strong>3</strong><span>patents listed</span></div>
+            <div class="hero__fact"><strong>9</strong><span>software copyrights</span></div>
+          </div>
+        </div>
+      </section>
 
-      <!-- Education -->
       <section id="education" class="section">
         <h2 class="section__title">Education</h2>
-        <div class="section__body">
-          <div class="edu">
-            <article class="edu__item">
-              <div class="edu__time">2026.09 – 2028.01</div>
-              <div class="edu__info">
-                <h3>The University of Hong Kong</h3>
-                <p class="edu__degree">MSc in Low-Altitude Technology</p>
-                <p class="edu__zh">香港大学 · 低空技术硕士</p>
-              </div>
-            </article>
-            <article class="edu__item">
-              <div class="edu__time">2022.09 – 2026.06</div>
-              <div class="edu__info">
-                <h3>Wuhan University of Technology</h3>
-                <p class="edu__degree">B.Eng. in Traffic Engineering</p>
-                <p class="edu__zh">武汉理工大学 · 交通工程本科</p>
-              </div>
-            </article>
-          </div>
-        </div>
+        <div class="section__body"><div class="edu">
+          <article class="edu__item"><div class="edu__time">2026.09 – 2028.01</div><div class="edu__info"><h3>The University of Hong Kong</h3><p class="edu__degree">MSc in Low-Altitude Technology</p><p class="edu__zh">香港大学 · 低空技术硕士</p></div></article>
+          <article class="edu__item"><div class="edu__time">2022.09 – 2026.06</div><div class="edu__info"><h3>Wuhan University of Technology</h3><p class="edu__degree">B.Eng. in Traffic Engineering</p><p class="edu__zh">武汉理工大学 · 交通工程本科</p></div></article>
+        </div></div>
       </section>
 
-      <!-- Research -->
       <section id="research" class="section">
         <h2 class="section__title">Research Interests</h2>
-        <div class="section__body">
-          <div class="research-grid">
-            <article class="r-card">
-              <div class="r-card__icon"><i class="fa-solid fa-car-side"></i></div>
-              <h3>智慧交通</h3>
-              <p>面向车路协同（V2X）场景的异构交通流协同控制、可变限速与合流区决策优化，结合 SUMO/CARLA 等仿真平台开展算法评估与部署验证</p>
-            </article>
-            <article class="r-card">
-              <div class="r-card__icon"><i class="fa-solid fa-helicopter-symbol"></i></div>
-              <h3>低空技术 / UAV</h3>
-              <p>自主设计组装无人机，有丰富低空飞行器操作经验，能够熟练进行植保、航测作业，完整参加过 DJI 机场 3 部署；研究方向覆盖多无人机轨迹规划与边缘计算任务卸载</p>
-            </article>
-          </div>
-        </div>
+        <div class="section__body"><div class="research-grid">
+          <article class="r-card"><div class="r-card__icon"><i class="fa-solid fa-car-side" aria-hidden="true"></i></div><h3>智慧交通 · Intelligent Transportation</h3><p>面向车路协同（V2X）场景的异构交通流协同控制、可变限速与合流区决策优化，结合 SUMO/CARLA 等仿真平台开展算法评估与部署验证。</p></article>
+          <article class="r-card"><div class="r-card__icon"><i class="fa-solid fa-helicopter-symbol" aria-hidden="true"></i></div><h3>低空技术 · UAV Systems</h3><p>自主设计组装无人机，具备植保、航测和 DJI 机场 3 部署经验；研究方向覆盖多无人机轨迹规划与边缘计算任务卸载。</p></article>
+        </div></div>
       </section>
 
-      <!-- Publications -->
       <section id="publications" class="section">
         <h2 class="section__title">Publications</h2>
         <div class="section__body">
-
           <h3 class="subhead">Published / Accepted</h3>
-
-          <article class="pub">
-            <div class="pub__row">
-              <span class="badge badge--ei">EI</span>
-              <div class="pub__content">
-                <h4>V2X-Collaborative Heterogeneous Traffic Flow Control Method for High-Flow Freeways Based on Optimized PPO Algorithm</h4>
-                <p class="pub__meta"><strong>AIAT 2026</strong> · Springer LNEE · <em>1st author</em></p>
-                <button class="pub__btn" aria-expanded="false">Abstract</button>
-              </div>
-            </div>
-            <div class="pub__abs" hidden>
-              <p>Saturated freeways increasingly host heterogeneous streams of connected and automated vehicles (CAVs) and human-driven vehicles (HDVs). Balancing corridor-level flow smoothing with local conflict avoidance at merge bottlenecks remains difficult for both classical control and standard deep reinforcement learning (DRL) agents, largely because onboard sensing fragments observability and single-objective rewards neglect the efficiency–stability–safety trade-off. Here we show that vehicle-to-everything (V2X) cooperative sensing is not merely a communication upgrade but a prerequisite for high-pressure freeway control: a ten-dimensional global perception vector fused from roadside units and basic safety messages enables an optimized proximal policy optimization agent (V2X-PPO) to anticipate shockwaves three to five seconds ahead. V2X-PPO couples perception augmentation, a multi-objective composite reward, and training strategies for generalization. In SUMO simulations of a 3,000 m three-lane corridor under a 5,900 veh/h load, V2X-PPO achieved the strongest full-corridor performance across CAV penetration rates, raising throughput by 19.1% relative to the manual baseline at 80% penetration (174.7 veh) while reducing time headway to 2.26 s. At the merge micro-scale, HAPPO exhibited more stable local weaving behaviour, whereas V2X-PPO retained superior corridor efficiency; SAC lagged both under stress. These macro–micro boundaries imply that no single DRL paradigm is dual-optimal and that future intelligent freeways should co-design V2X infrastructure with algorithmic objectives.</p>
-            </div>
-          </article>
-
-          <article class="pub">
-            <div class="pub__row">
-              <span class="badge badge--conf">WTC</span>
-              <div class="pub__content">
-                <h4>Car-Following Model Parameter Dynamic Optimization Research</h4>
-                <p class="pub__meta"><strong>WTC 2025</strong> 世界交通运输大会 · <em>1st author</em> · <a href="https://doi.org/10.26914/c.cnkihy.2025.017610" target="_blank" rel="noopener">DOI</a></p>
-                <button class="pub__btn" aria-expanded="false">Abstract</button>
-              </div>
-            </div>
-            <div class="pub__abs" hidden>
-              <p>To enhance the accuracy of microscopic traffic simulation and align simulated traffic flow more closely with real-world conditions, this study proposes a dynamic parameter optimization and updating method for car-following models based on macroscopic traffic flow data. By analyzing data from the California Highway Dataset (PEMS) for specific sections of Interstate I-405 in Los Angeles, we selected four models (GHR, FVD, IDM, and Krauss) for parameter calibration using genetic algorithms. Validation was conducted with flow rate and speed as performance metrics, utilizing Mean Absolute Percentage Error (MAPE) as the goodness-of-fit measure. Comparative analysis of IDM model errors before and after parameter calibration revealed that in basic highway sections, post-calibration flow and speed errors were reduced to 28% and 93% of pre-calibration levels respectively. For ramp sections, these values decreased to 33% and 71%, demonstrating the effectiveness of macroscopic data-driven parameter calibration. Through comprehensive comparison of the four models during calibration and validation phases, the IDM model exhibited superior stability, minimal errors, and greater suitability for highway traffic flow simulation, thereby providing effective support for traffic management.</p>
-            </div>
-          </article>
-
-          <article class="pub">
-            <div class="pub__row">
-              <span class="badge badge--q2">Q2</span>
-              <div class="pub__content">
-                <h4>Robust Minimax Multi-Agent Deep Deterministic Policy Gradient for Reward Uncertainty</h4>
-                <p class="pub__meta"><strong>Applied Intelligence</strong> · <em>2nd author</em> · <a href="https://doi.org/10.1007/s10489-026-07255-5" target="_blank" rel="noopener">DOI</a></p>
-                <button class="pub__btn" aria-expanded="false">Abstract</button>
-              </div>
-            </div>
-            <div class="pub__abs" hidden>
-              <p>Despite advancements in Multi-Agent Deep Reinforcement Learning (MADRL), agents often exhibit fragility in dynamic adversarial environments due to reward function uncertainty and opponent policy shifts. Traditional RL algorithms struggle with unstable policy convergence and robustness issues under such uncertainties, as they inadequately model worst-case adversarial perturbations. To address this, we propose Robust-M3DDPG, a robust minimax multi-agent reinforcement learning framework that integrates Nash Equilibrium principles with minimax optimization. The approach formalizes the problem as a Robust Markov Game, explicitly modeling adversarial disturbances during policy optimization to enhance robustness in non-stationary environments. Key contributions include: (1) developing an Actor-Critic algorithm-based method to determine Nash Equilibrium policies; (2) extending the widely used Multi-Agent Deep Deterministic Policy Gradient Algorithm (MADDPG) with Robust Markov Games and minimax optimization for robust policy learning; and (3) proposing a Multi-Agent Adversarial Learning (MAAL) framework for efficiently solving adversarial policies to fulfill the minimax requirements. Evaluations across four cooperative-competitive multi-agent environments with different reward uncertainty levels demonstrate that Robust-M3DDPG significantly outperforms existing MADRL baselines in scenarios with high reward uncertainty and adversarial dynamics. This work bridges the gap between theoretical robustness guarantees and practical multi-agent reinforcement learning deployment under real-world perturbations.</p>
-            </div>
-          </article>
-
-          <article class="pub">
-            <div class="pub__row">
-              <span class="badge badge--q1">Q1</span>
-              <div class="pub__content">
-                <h4>Partially temporally constrained modeling of speeding crash injury severities on freeways and non-freeways</h4>
-                <p class="pub__meta"><strong>Accident Analysis and Prevention</strong> · <em>3rd author</em> · <a href="https://doi.org/10.1016/j.aap.2025.107917" target="_blank" rel="noopener">DOI</a></p>
-                <button class="pub__btn" aria-expanded="false">Abstract</button>
-              </div>
-            </div>
-            <div class="pub__abs" hidden>
-              <p>Speeding crashes remain high injury severities after the stay-at-home order in California, highlighting a need for further investigation into the fundamental cause of this increment. To systematically explore the temporal impacts of the stay-at-home order on speeding behaviors and the corresponding crash-injury outcomes, this study utilizes California-reported single-vehicle speeding crashes on freeways (access-controlled) and non-freeways (non-access-controlled) before, during, and after the order. Significant injury factors and in-depth heterogeneity across observations are identified by random parameter logit models with heterogeneity in means and variances. Without segmenting the data by periods, the partially temporally constrained approach is employed to statistically determine varying and stabilized parameters over time through the whole dataset. Different likelihood ratio tests reveal significant temporal instabilities and stabilities of factors between two roadways and three periods. The potential impacts of observation selection issues on the marginal effect calculations of the partially constrained models are also systematically investigated. Significant variations in the probability of severe injury rate per week after the order are also found based on the Mann-Whitney U tests. The hysteretic effects of the order on the crash frequency and severity are observed on both freeways and non-freeways. Overall, seven variables are found to have stable effects, while fifteen variables exhibit unstable effects over time. Significant temporal variations in driver behaviors, including driving under the influence, cell phone usage, hit-and-run, failure to use seat belt, entering or leaving the ramp, and reaction to previous collisions, are observed before, during, or after the order. Specific countermeasures and effects of heterogeneity in means and variances are also discussed. These findings provide insights into understanding the temporal impacts of the stay-at-home order on injury severities, which are valuable to decision-makers and researchers for future order practice, restriction improvement, and complementary policy development.</p>
-            </div>
-          </article>
-
+          <article class="pub"><div class="pub__row"><span class="badge badge--ei">EI</span><div class="pub__content"><h4>V2X-Collaborative Heterogeneous Traffic Flow Control Method for High-Flow Freeways Based on Optimized PPO Algorithm</h4><p class="pub__meta"><strong>AIAT 2026</strong> · Springer LNEE · <em>1st author</em></p></div></div></article>
+          <article class="pub"><div class="pub__row"><span class="badge badge--conf">WTC</span><div class="pub__content"><h4>Car-Following Model Parameter Dynamic Optimization Research</h4><p class="pub__meta"><strong>WTC 2025</strong> · 世界交通运输大会 · <em>1st author</em> · <a href="https://doi.org/10.26914/c.cnkihy.2025.017610" target="_blank" rel="noopener">DOI</a></p></div></div></article>
+          <article class="pub"><div class="pub__row"><span class="badge badge--q2">Q2</span><div class="pub__content"><h4>Robust Minimax Multi-Agent Deep Deterministic Policy Gradient for Reward Uncertainty</h4><p class="pub__meta"><strong>Applied Intelligence</strong> · <em>2nd author</em> · <a href="https://doi.org/10.1007/s10489-026-07255-5" target="_blank" rel="noopener">DOI</a></p></div></div></article>
+          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><div class="pub__content"><h4>Partially temporally constrained modeling of speeding crash injury severities on freeways and non-freeways</h4><p class="pub__meta"><strong>Accident Analysis and Prevention</strong> · <em>3rd author</em> · <a href="https://doi.org/10.1016/j.aap.2025.107917" target="_blank" rel="noopener">DOI</a></p></div></div></article>
           <h3 class="subhead">Under Review</h3>
-
-          <article class="pub">
-            <div class="pub__row">
-              <span class="badge badge--q1">Q1</span>
-              <span class="badge badge--wip">Review</span>
-              <div class="pub__content">
-                <h4>MURATO: Robust Adaptive Joint Trajectory Planning and Task Offloading for Multi-UAV Edge Computing</h4>
-                <p class="pub__meta"><strong>IEEE Internet of Things Journal</strong> · <em>1st author</em></p>
-              </div>
-            </div>
-          </article>
-
-          <article class="pub">
-            <div class="pub__row">
-              <span class="badge badge--q1">Q1</span>
-              <span class="badge badge--wip">Review</span>
-              <div class="pub__content">
-                <h4>Global-state PPOv9 and spatially decoupled Hybrid control for heterogeneous freeway merging traffic</h4>
-                <p class="pub__meta"><strong>Scientific Reports</strong> · <em>1st author</em></p>
-              </div>
-            </div>
-          </article>
-
-          <article class="pub">
-            <div class="pub__row">
-              <span class="badge badge--q1">Q1</span>
-              <span class="badge badge--wip">Review</span>
-              <div class="pub__content">
-                <h4>DyCo-MAVSL: Dynamic Coalition-based Multi-Agent Variable Speed Limit Control for Continuous Freeway Bottlenecks</h4>
-                <p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>3rd author</em></p>
-              </div>
-            </div>
-          </article>
-
-          <article class="pub">
-            <div class="pub__row">
-              <span class="badge badge--q1">Q1</span>
-              <span class="badge badge--wip">Review</span>
-              <div class="pub__content">
-                <h4>Continual Attention Learning-based Multi-Agent Variable Speed Limits Control in Closely-Spaced Continuous Freeway Bottlenecks</h4>
-                <p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>3rd author</em></p>
-              </div>
-            </div>
-          </article>
-
-          <article class="pub">
-            <div class="pub__row">
-              <span class="badge badge--q1">Q1</span>
-              <span class="badge badge--wip">Review</span>
-              <div class="pub__content">
-                <h4>Safety-constrained Deep Reinforcement Learning with Hybrid Action Masking and Projection for Highway Movable Differential Variable Speed Limits</h4>
-                <p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>6th author</em></p>
-              </div>
-            </div>
-          </article>
-
+          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>MURATO: Robust Adaptive Joint Trajectory Planning and Task Offloading for Multi-UAV Edge Computing</h4><p class="pub__meta"><strong>IEEE Internet of Things Journal</strong> · <em>1st author</em></p></div></div></article>
+          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>Global-state PPOv9 and spatially decoupled Hybrid control for heterogeneous freeway merging traffic</h4><p class="pub__meta"><strong>Scientific Reports</strong> · <em>1st author</em></p></div></div></article>
+          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>DyCo-MAVSL: Dynamic Coalition-based Multi-Agent Variable Speed Limit Control for Continuous Freeway Bottlenecks</h4><p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>3rd author</em></p></div></div></article>
+          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>Continual Attention Learning-based Multi-Agent Variable Speed Limits Control in Closely-Spaced Continuous Freeway Bottlenecks</h4><p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>3rd author</em></p></div></div></article>
+          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>Safety-constrained Deep Reinforcement Learning with Hybrid Action Masking and Projection for Highway Movable Differential Variable Speed Limits</h4><p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>6th author</em></p></div></div></article>
         </div>
       </section>
 
-      <!-- Patents -->
       <section id="patents" class="section">
         <h2 class="section__title">Patents & Copyrights</h2>
         <div class="section__body">
           <div class="patent-list">
-            <div class="patent patent--granted">
-              <span class="patent__tag">已授权</span>
-              <div>
-                <h4>国家发明专利 · 一种移动式路侧行人交通冲突监测与预警装置及方法</h4>
-                <p>CN202410489742.9 · 学生一作</p>
-              </div>
-            </div>
-            <div class="patent">
-              <span class="patent__tag">实质审查中</span>
-              <div>
-                <h4>国家发明专利 · 一种多模态 VR 隧道火灾仿真实验设备协同控制方法</h4>
-                <p>CN202511132538.2 · 学生一作</p>
-              </div>
-            </div>
-            <div class="patent patent--granted">
-              <span class="patent__tag">已授权</span>
-              <div>
-                <h4>国家发明专利 · 无人对接作业平台协同方法和相关设备</h4>
-                <p>CN202511641547.4 · 学生二作</p>
-              </div>
-            </div>
+            <div class="patent patent--granted"><span class="patent__tag">已授权</span><div><h4>国家发明专利 · 一种移动式路侧行人交通冲突监测与预警装置及方法</h4><p>CN202410489742.9 · 学生一作</p></div></div>
+            <div class="patent"><span class="patent__tag">实质审查中</span><div><h4>国家发明专利 · 一种多模态 VR 隧道火灾仿真实验设备协同控制方法</h4><p>CN202511132538.2 · 学生一作</p></div></div>
+            <div class="patent patent--granted"><span class="patent__tag">已授权</span><div><h4>国家发明专利 · 无人对接作业平台协同方法和相关设备</h4><p>CN202511641547.4 · 学生二作</p></div></div>
           </div>
           <h3 class="subhead">软件著作权</h3>
           <div class="soft-list">
-            <div class="soft">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>龙门式起重机智能控制系统 V1.0</strong>
-                <span>2025SR1005643</span>
-              </div>
-            </div>
-            <div class="soft">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>大型货车转向内轮轨迹动态预警系统 V1.0</strong>
-                <span>2025SR1618070</span>
-              </div>
-            </div>
-            <div class="soft">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>我的生活助手——校园场景个性化AI助手 V1.0</strong>
-                <span>2025SR1706356</span>
-              </div>
-            </div>
-            <div class="soft">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>基于LLM自然语言AI数据库管理系统 V1.0</strong>
-                <span>2025SR1710178</span>
-              </div>
-            </div>
-            <div class="soft">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>机械哨兵 AI自主巡检系统 V1.0</strong>
-                <span>2025SR1886759</span>
-              </div>
-            </div>
-            <div class="soft">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>改扩建路段智能防碰撞预警布设管理系统 V1.0</strong>
-                <span>2025SR2172989</span>
-              </div>
-            </div>
-            <div class="soft">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>高速公路车路协同车辆协同换道与合流控制系统 V1.0</strong>
-                <span>2025SR2212502</span>
-              </div>
-            </div>
-            <div class="soft">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>基于车路协同的高速公路全息感知与应急指挥系统 V1.0</strong>
-                <span>2025SR2212340</span>
-              </div>
-            </div>
-            <div class="soft">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>融合多源感知的高速公路交通事件智能识别与警报系统 V1.0</strong>
-                <span>2025SR2212494</span>
-              </div>
-            </div>
+            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>龙门式起重机智能控制系统 V1.0</strong><span>2025SR1005643</span></div></div>
+            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>大型货车转向内轮轨迹动态预警系统 V1.0</strong><span>2025SR1618070</span></div></div>
+            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>我的生活助手——校园场景个性化AI助手 V1.0</strong><span>2025SR1706356</span></div></div>
+            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>基于LLM自然语言AI数据库管理系统 V1.0</strong><span>2025SR1710178</span></div></div>
+            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>机械哨兵 AI自主巡检系统 V1.0</strong><span>2025SR1886759</span></div></div>
+            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>改扩建路段智能防碰撞预警布设管理系统 V1.0</strong><span>2025SR2172989</span></div></div>
+            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>高速公路车路协同车辆协同换道与合流控制系统 V1.0</strong><span>2025SR2212502</span></div></div>
+            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>基于车路协同的高速公路全息感知与应急指挥系统 V1.0</strong><span>2025SR2212340</span></div></div>
+            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>融合多源感知的高速公路交通事件智能识别与警报系统 V1.0</strong><span>2025SR2212494</span></div></div>
           </div>
         </div>
       </section>
 
-      <!-- Certifications -->
-      <section id="certifications" class="section">
-        <h2 class="section__title">Certifications</h2>
-        <div class="section__body">
-          <div class="cert-grid">
-            <article class="cert-card">
-              <div class="cert-card__icon"><i class="fa-solid fa-plane-up"></i></div>
-              <div>
-                <h4>CAAC 轻型民用无人驾驶航空器安全操控理论培训合格证明</h4>
-                <p>中国民用航空局 · 2024.04</p>
-              </div>
-            </article>
-            <article class="cert-card">
-              <div class="cert-card__icon"><i class="fa-solid fa-helicopter-symbol"></i></div>
-              <div>
-                <h4>AOPA 民用无人机驾驶员合格证</h4>
-                <p>中国航空器拥有者及驾驶员协会 · 2024.04</p>
-              </div>
-            </article>
-            <article class="cert-card">
-              <div class="cert-card__icon"><i class="fa-solid fa-plane"></i></div>
-              <div>
-                <h4>DJI 农用无人机系统操作手合格证</h4>
-                <p>深圳市大疆创新科技有限公司 · 有效期至 2028.03</p>
-              </div>
-            </article>
-            <article class="cert-card">
-              <div class="cert-card__icon"><i class="fa-solid fa-certificate"></i></div>
-              <div>
-                <h4>IICT 无人机操控工程师</h4>
-                <p>工信人才岗位能力评价</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+      <section id="certifications" class="section"><h2 class="section__title">Certifications</h2><div class="section__body"><div class="cert-grid">
+        <article class="cert-card"><div class="cert-card__icon"><i class="fa-solid fa-plane-up" aria-hidden="true"></i></div><div><h4>CAAC 轻型民用无人驾驶航空器安全操控理论培训合格证明</h4><p>中国民用航空局 · 2024.04</p></div></article>
+        <article class="cert-card"><div class="cert-card__icon"><i class="fa-solid fa-helicopter-symbol" aria-hidden="true"></i></div><div><h4>AOPA 民用无人机驾驶员合格证</h4><p>中国航空器拥有者及驾驶员协会 · 2024.04</p></div></article>
+        <article class="cert-card"><div class="cert-card__icon"><i class="fa-solid fa-plane" aria-hidden="true"></i></div><div><h4>DJI 农用无人机系统操作手合格证</h4><p>深圳市大疆创新科技有限公司 · 有效期至 2028.03</p></div></article>
+        <article class="cert-card"><div class="cert-card__icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div><div><h4>IICT 无人机操控工程师</h4><p>工信人才岗位能力评价</p></div></article>
+      </div></div></section>
 
-      <!-- Conferences -->
-      <section id="conferences" class="section">
-        <h2 class="section__title">参会记录</h2>
-        <div class="section__body">
-          <div class="conf-list">
-            <div class="conf">
-              <span class="conf__year">2026</span>
-              <div class="conf__info">
-                <h4>AIAT 人工智能与自主式交通国际学术会议</h4>
-                <p>武汉 · 论文报告</p>
-              </div>
-            </div>
-            <div class="conf">
-              <span class="conf__year">2025</span>
-              <div class="conf__info">
-                <h4>WTC 世界交通运输大会</h4>
-                <p>苏州 · 墙报演讲</p>
-              </div>
-            </div>
-            <div class="conf">
-              <span class="conf__year">2025</span>
-              <div class="conf__info">
-                <h4>先进制造青年科技工作者论坛</h4>
-                <p>上海</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="conferences" class="section"><h2 class="section__title">Conferences</h2><div class="section__body"><div class="conf-list">
+        <div class="conf"><span class="conf__year">2026</span><div class="conf__info"><h4>AIAT 人工智能与自主式交通国际学术会议</h4><p>武汉 · 论文报告</p></div></div>
+        <div class="conf"><span class="conf__year">2025</span><div class="conf__info"><h4>WTC 世界交通运输大会</h4><p>苏州 · 墙报演讲</p></div></div>
+        <div class="conf"><span class="conf__year">2025</span><div class="conf__info"><h4>先进制造青年科技工作者论坛</h4><p>上海</p></div></div>
+      </div></div></section>
 
-      <!-- Awards -->
-      <section id="awards" class="section">
-        <h2 class="section__title">Awards</h2>
-        <div class="section__body">
-          <div class="awards">
-            <div class="award">
-              <span class="award__level award__level--n">国家级</span>
-              <div class="award__body">
-                <strong>"CIMC" 中国智能制造挑战赛</strong>
-                <span>二等奖 · 第一作者</span>
-              </div>
-            </div>
-            <div class="award">
-              <span class="award__level award__level--n">国家级</span>
-              <div class="award__body">
-                <strong>"互联网+" 大学生创新创业大赛</strong>
-                <span>铜奖</span>
-              </div>
-            </div>
-            <div class="award">
-              <span class="award__level award__level--n">全国赛</span>
-              <div class="award__body">
-                <strong>中国青年志愿服务公益创业赛</strong>
-                <span>银奖 · 第二作者</span>
-              </div>
-            </div>
-            <div class="award">
-              <span class="award__level award__level--p">省级</span>
-              <div class="award__body">
-                <strong>2025 中国高校计算机大赛 · 人工智能创意赛</strong>
-                <span>三等奖 · 第二作者</span>
-              </div>
-            </div>
-            <div class="award">
-              <span class="award__level award__level--p">省级</span>
-              <div class="award__body">
-                <strong>中国大学生机械工程创新创意大赛</strong>
-                <span>一等奖</span>
-              </div>
-            </div>
-            <div class="award">
-              <span class="award__level award__level--p">省级</span>
-              <div class="award__body">
-                <strong>中国大学生计算机设计大赛</strong>
-                <span>三等奖 · 第二作者</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="awards" class="section"><h2 class="section__title">Awards</h2><div class="section__body"><div class="awards">
+        <div class="award"><span class="award__level award__level--n">国家级</span><div class="award__body"><strong>“CIMC” 中国智能制造挑战赛</strong><span>二等奖 · 第一作者</span></div></div>
+        <div class="award"><span class="award__level award__level--n">国家级</span><div class="award__body"><strong>“互联网+” 大学生创新创业大赛</strong><span>铜奖</span></div></div>
+        <div class="award"><span class="award__level award__level--n">全国赛</span><div class="award__body"><strong>中国青年志愿服务公益创业赛</strong><span>银奖 · 第二作者</span></div></div>
+        <div class="award"><span class="award__level award__level--p">省级</span><div class="award__body"><strong>2025 中国高校计算机大赛 · 人工智能创意赛</strong><span>三等奖 · 第二作者</span></div></div>
+        <div class="award"><span class="award__level award__level--p">省级</span><div class="award__body"><strong>中国大学生机械工程创新创意大赛</strong><span>一等奖</span></div></div>
+        <div class="award"><span class="award__level award__level--p">省级</span><div class="award__body"><strong>中国大学生计算机设计大赛</strong><span>三等奖 · 第二作者</span></div></div>
+      </div></div></section>
 
-      <!-- Experience -->
-      <section id="experience" class="section">
-        <h2 class="section__title">Experience</h2>
-        <div class="section__body">
-          <div class="exp">
-            <article class="exp__card">
-              <div class="exp__top">
-                <h3>京东物流 · JDY 供应链规划</h3>
-                <span class="exp__time">2025.07 – 2025.11</span>
-              </div>
-              <p class="exp__org">北京京东世纪贸易有限公司</p>
-              <ul>
-                <li>基于"天策"平台分析供应链成本与时效，响应"灭霸"政策实现降本增效</li>
-                <li>深入一线轮岗，完成仓库工艺规划设计，优化功能分区与设备布局</li>
-              </ul>
-            </article>
-            <article class="exp__card">
-              <div class="exp__top">
-                <h3>学院学生会 · 执行主席</h3>
-                <span class="exp__time">2024.06 – 2025.06</span>
-              </div>
-              <p class="exp__org">武汉理工大学交通与物流工程学院</p>
-              <ul>
-                <li>主办"挑战杯"院级选拔赛，承办国家级 A 类竞赛省赛</li>
-                <li>统筹跨年晚会等大型活动，服务学院 8000+ 师生</li>
-              </ul>
-            </article>
-          </div>
+      <section id="experience" class="section"><h2 class="section__title">Experience</h2><div class="section__body"><div class="exp">
+        <article class="exp__card"><div class="exp__top"><h3>京东物流 · JDY 供应链规划</h3><span class="exp__time">2025.07 – 2025.11</span></div><p class="exp__org">北京京东世纪贸易有限公司</p><ul><li>基于“天策”平台分析供应链成本与时效，响应“灭霸”政策实现降本增效。</li><li>深入一线轮岗，完成仓库工艺规划设计，优化功能分区与设备布局。</li></ul></article>
+        <article class="exp__card"><div class="exp__top"><h3>学院学生会 · 执行主席</h3><span class="exp__time">2024.06 – 2025.06</span></div><p class="exp__org">武汉理工大学交通与物流工程学院</p><ul><li>主办“挑战杯”院级选拔赛，承办国家级 A 类竞赛省赛。</li><li>统筹跨年晚会等大型活动，服务学院 8000+ 师生。</li></ul></article>
+      </div><h3 class="subhead">Academic Service</h3><ul class="service"><li>Reviewer · <em>Scientific Reports</em> (Nature Portfolio)</li><li>Member · IEEE</li><li>Member · IEEE Aerospace and Electronic Systems Society</li><li>Member · IEEE Intelligent Transportation Systems Society</li><li>Member · 中国公路学会</li><li>Member · 中国机械工程学会</li></ul></div></section>
 
-          <h3 class="subhead">Academic Service</h3>
-          <ul class="service">
-            <li>Reviewer · <em>Scientific Reports</em> (Nature Portfolio)</li>
-            <li>Member · IEEE</li>
-            <li>Member · IEEE Aerospace and Electronic Systems Society</li>
-            <li>Member · IEEE Intelligent Transportation Systems Society</li>
-            <li>Member · 中国公路学会</li>
-            <li>Member · 中国机械工程学会</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="section">
-        <h2 class="section__title">Contact</h2>
-        <div class="section__body">
-          <div class="contact-grid">
-            <a href="mailto:340585@whut.edu.cn" class="c-card">
-              <i class="fa-solid fa-envelope"></i>
-              <span class="c-card__label">WHUT</span>
-              <strong>340585@whut.edu.cn</strong>
-            </a>
-            <a href="mailto:u3678199@connect.hku.hk" class="c-card">
-              <i class="fa-solid fa-envelope"></i>
-              <span class="c-card__label">HKU</span>
-              <strong>u3678199@connect.hku.hk</strong>
-            </a>
-            <a href="https://github.com/Qiming-Y" target="_blank" rel="noopener" class="c-card">
-              <i class="fa-brands fa-github"></i>
-              <span class="c-card__label">GitHub</span>
-              <strong>Qiming-Y</strong>
-            </a>
-          </div>
-        </div>
-      </section>
-
+      <section id="contact" class="section"><h2 class="section__title">Contact</h2><div class="section__body"><div class="contact-grid">
+        <a href="mailto:340585@whut.edu.cn" class="c-card"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span class="c-card__label">WHUT</span><strong>340585@whut.edu.cn</strong></a>
+        <a href="mailto:u3678199@connect.hku.hk" class="c-card"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span class="c-card__label">HKU</span><strong>u3678199@connect.hku.hk</strong></a>
+        <a href="https://github.com/Qiming-Y" target="_blank" rel="noopener" class="c-card"><i class="fa-brands fa-github" aria-hidden="true"></i><span class="c-card__label">GitHub</span><strong>Qiming-Y</strong></a>
+      </div></div></section>
     </main>
   </div>
 
-  <footer class="footer">
-    <p>© 2026 杨启明 · Qiming Yang</p>
-  </footer>
-
+  <footer class="footer"><p>© 2026 杨启明 · Qiming Yang</p></footer>
   <script src="js/main.js"></script>
 </body>
 </html>
