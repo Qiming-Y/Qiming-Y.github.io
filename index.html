@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>杨启明 · Qiming Yang | Intelligent Transportation & Low-Altitude Systems</title>
   <meta name="description" content="Qiming Yang — MSc Candidate at HKU researching intelligent transportation, V2X, multi-agent reinforcement learning, UAVs, and low-altitude systems.">
   <meta name="author" content="Qiming Yang">
-  <meta name="theme-color" content="#182536">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta property="og:title" content="Qiming Yang · Intelligent Mobility Research">
+  <meta property="og:description" content="Research in intelligent transportation, multi-agent learning, and low-altitude systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qiming-y.github.io/">
   <link rel="canonical" href="https://qiming-y.github.io/">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css?v=20260923">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="nav">
     <div class="nav__inner">
-      <a href="#top" class="nav__logo">Qiming Yang</a>
-      <button class="nav__burger" aria-label="菜单" aria-expanded="false">
+      <a href="#top" class="nav__logo"><span class="nav__monogram" aria-hidden="true">QY</span> Qiming Yang<span class="nav__label"> / Academic profile</span></a>
+      <button class="nav__burger" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation" type="button">
         <span></span><span></span>
       </button>
-      <nav class="nav__menu" aria-label="Primary navigation">
-        <a href="#education" class="nav__link">Education</a>
+      <nav id="primary-navigation" class="nav__menu" aria-label="Primary navigation">
         <a href="#research" class="nav__link">Research</a>
         <a href="#publications" class="nav__link">Publications</a>
-        <a href="#patents" class="nav__link">Patents</a>
-        <a href="#certifications" class="nav__link">Certs</a>
-        <a href="#conferences" class="nav__link">Conferences</a>
-        <a href="#awards" class="nav__link">Awards</a>
+        <a href="#education" class="nav__link">Education</a>
         <a href="#experience" class="nav__link">Experience</a>
         <a href="#contact" class="nav__link">Contact</a>
       </nav>
@@ -37,111 +37,145 @@
   <div class="page" id="top">
     <aside class="sidebar" aria-label="Profile">
       <div class="sidebar__card">
-        <div class="sidebar__avatar"><img src="assets/avatar.jpg" alt="杨启明 / Qiming Yang"></div>
-        <h1 class="sidebar__name">杨启明</h1>
-        <p class="sidebar__name-en">Qiming Yang</p>
-        <p class="sidebar__bio">MSc Candidate · Low-Altitude Technology<br>The University of Hong Kong</p>
+        <div class="sidebar__avatar"><img src="assets/avatar.jpg" alt="Portrait of Qiming Yang" width="120" height="144" fetchpriority="high"></div>
+        <div class="sidebar__identity">
+          <h1 class="sidebar__name">Qiming Yang</h1>
+          <p class="sidebar__name-zh" lang="zh-CN">杨启明</p>
+          <p class="sidebar__bio">MSc Candidate<br>Low-Altitude Technology</p>
+          <p class="sidebar__affiliation">The University of Hong Kong</p>
+        </div>
         <ul class="sidebar__links">
-          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Wuhan → Hong Kong</span></li>
-          <li><a href="mailto:340585@whut.edu.cn"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>340585@whut.edu.cn</span></a></li>
-          <li><a href="mailto:u3678199@connect.hku.hk"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>u3678199@connect.hku.hk</span></a></li>
-          <li><a href="https://github.com/Qiming-Y" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg><span>Wuhan → Hong Kong</span></li>
+          <li><a href="mailto:340585@whut.edu.cn"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>340585@whut.edu.cn</span></a></li>
+          <li><a href="mailto:u3678199@connect.hku.hk"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>u3678199@connect.hku.hk</span></a></li>
+          <li><a href="https://github.com/Qiming-Y" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1-5-3-7-3m14 6v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.8-1.6 6.8-7.3a5.7 5.7 0 0 0-1.5-4A5.3 5.3 0 0 0 20.2.1S19 0 16 1.8a13.4 13.4 0 0 0-7 0C6 0 4.8.1 4.8.1a5.3 5.3 0 0 0-.1 3.9 5.7 5.7 0 0 0-1.5 4c0 5.7 3.5 6.9 6.8 7.3A3.5 3.5 0 0 0 9 18v4" transform="translate(1 2) scale(.9)"/></svg><span>GitHub</span></a></li>
         </ul>
         <div class="sidebar__tags" aria-label="Research keywords">
           <span class="tag">MARL</span><span class="tag">V2X</span><span class="tag">UAV</span><span class="tag">ITS</span>
         </div>
+        <nav class="sidebar__index" aria-label="All sections">
+          <p class="eyebrow">Explore</p>
+          <a href="#research">Research interests <span aria-hidden="true">01</span></a>
+          <a href="#publications">Publications <span aria-hidden="true">02</span></a>
+          <a href="#education">Education <span aria-hidden="true">03</span></a>
+          <a href="#patents">Patents &amp; software <span aria-hidden="true">04</span></a>
+          <a href="#certifications">Certifications <span aria-hidden="true">05</span></a>
+          <a href="#conferences">Conferences <span aria-hidden="true">06</span></a>
+          <a href="#awards">Awards <span aria-hidden="true">07</span></a>
+          <a href="#experience">Experience &amp; service <span aria-hidden="true">08</span></a>
+        </nav>
       </div>
     </aside>
 
     <main id="main-content" class="content">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero__content">
-          <p class="hero__eyebrow">Researcher · Intelligent Transportation · Low-Altitude Systems</p>
-          <h2 id="hero-title" class="hero__title">Building safer, smarter mobility systems across roads and skies.</h2>
+          <p class="hero__eyebrow"><span></span> Intelligent transportation &amp; low-altitude systems</p>
+          <h2 id="hero-title" class="hero__title">Intelligent mobility,<br>from <em>roads</em> to <em>skies.</em></h2>
           <p class="hero__lead">I study multi-agent reinforcement learning for connected and autonomous mobility, with current work spanning V2X traffic control, UAV trajectory planning, and edge-computing task offloading.</p>
           <div class="hero__actions">
-            <a class="hero__btn hero__btn--primary" href="#publications"><i class="fa-solid fa-book-open" aria-hidden="true"></i> View publications</a>
-            <a class="hero__btn" href="#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Get in touch</a>
+            <a class="hero__btn hero__btn--primary" href="#publications">Explore my research <span aria-hidden="true">↗</span></a>
+            <a class="hero__btn" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
           </div>
           <div class="hero__facts" aria-label="Academic profile at a glance">
-            <div class="hero__fact"><strong>4</strong><span>published / accepted</span></div>
-            <div class="hero__fact"><strong>5</strong><span>under review</span></div>
-            <div class="hero__fact"><strong>3</strong><span>patents listed</span></div>
-            <div class="hero__fact"><strong>9</strong><span>software copyrights</span></div>
+            <div class="hero__fact"><strong>04</strong><span>Published / accepted</span></div>
+            <div class="hero__fact"><strong>05</strong><span>Under review</span></div>
+            <div class="hero__fact"><strong>03</strong><span>Patents listed</span></div>
+            <div class="hero__fact"><strong>09</strong><span>Software copyrights</span></div>
           </div>
         </div>
       </section>
 
+      <section id="research" class="section">
+        <h2 class="section__title"><span class="section__number" aria-hidden="true">01</span>Research interests <span class="section__zh" lang="zh-CN">研究方向</span></h2>
+        <div class="section__body"><div class="research-grid">
+          <article class="r-card r-card--road">
+            <div class="r-card__top"><span class="eyebrow">Ground mobility</span><span aria-hidden="true">01 /</span></div>
+            <svg class="research-art" viewBox="0 0 320 98" fill="none" aria-hidden="true"><path d="M-10 73H152C203 73 217 25 270 25H330M-10 48H149C197 48 215 0 270 0H330M-10 98H152C216 98 231 50 270 50H330" stroke="currentColor" stroke-width="1.2"/><path d="M0 61H146C208 61 210 13 270 13H320" stroke="currentColor" stroke-dasharray="6 8"/><rect x="55" y="43" width="26" height="10" rx="3" fill="currentColor"/><rect x="124" y="68" width="26" height="10" rx="3" fill="currentColor"/><rect x="252" y="20" width="26" height="10" rx="3" fill="currentColor"/><path d="M67 33Q110 1 137 58M137 58Q203 14 263 10" stroke="currentColor" stroke-dasharray="2 4" opacity=".55"/></svg>
+            <h3>Intelligent transportation</h3><p class="r-card__subtitle" lang="zh-CN">智慧交通与车路协同</p>
+            <p lang="zh-CN">面向车路协同（V2X）场景的异构交通流协同控制、可变限速与合流区决策优化，结合 SUMO/CARLA 等仿真平台开展算法评估与部署验证。</p>
+            <div class="r-card__tags"><span>V2X</span><span>Multi-agent RL</span><span>Traffic control</span></div>
+          </article>
+          <article class="r-card r-card--air">
+            <div class="r-card__top"><span class="eyebrow">Low-altitude systems</span><span aria-hidden="true">02 /</span></div>
+            <svg class="research-art" viewBox="0 0 320 98" fill="none" aria-hidden="true"><path d="M8 78L86 23L176 65L278 15M86 23L278 15L238 88L176 65L8 78" stroke="currentColor" stroke-dasharray="3 5" opacity=".6"/><circle cx="86" cy="23" r="17" stroke="currentColor" opacity=".25"/><circle cx="86" cy="23" r="5" fill="currentColor"/><circle cx="176" cy="65" r="5" fill="currentColor"/><circle cx="278" cy="15" r="5" fill="currentColor"/><circle cx="8" cy="78" r="4" stroke="currentColor"/><circle cx="238" cy="88" r="4" stroke="currentColor"/><path d="M161 65H191M176 50V80" stroke="currentColor"/><circle cx="176" cy="65" r="21" stroke="currentColor" opacity=".25"/></svg>
+            <h3>UAV &amp; edge systems</h3><p class="r-card__subtitle" lang="zh-CN">低空技术与无人机系统</p>
+            <p lang="zh-CN">自主设计组装无人机，具备植保、航测和 DJI 机场 3 部署经验；研究方向覆盖多无人机轨迹规划与边缘计算任务卸载。</p>
+            <div class="r-card__tags"><span>UAV</span><span>Trajectory planning</span><span>Edge computing</span></div>
+          </article>
+        </div></div>
+      </section>
+
+      <section id="publications" class="section">
+        <h2 class="section__title"><span class="section__number" aria-hidden="true">02</span>Publications <span class="section__zh" lang="zh-CN">学术论文</span></h2>
+        <div class="section__body">
+          <div class="publication-tools" hidden>
+            <div class="publication-filters" role="group" aria-label="Filter publications">
+              <button type="button" data-filter="all" aria-pressed="true">All <span>09</span></button>
+              <button type="button" data-filter="published" aria-pressed="false">Published / accepted <span>04</span></button>
+              <button type="button" data-filter="review" aria-pressed="false">Under review <span>05</span></button>
+            </div>
+            <p class="publication-count" role="status" aria-live="polite">Showing all 9 papers</p>
+          </div>
+          <h3 class="subhead" data-publication-heading="published">Published / accepted <span class="subhead__count">04</span></h3>
+          <article class="pub" data-status="published"><span class="pub__number" aria-hidden="true">01</span><div class="pub__row"><span class="badge badge--ei">EI</span><div class="pub__content"><h4>V2X-Collaborative Heterogeneous Traffic Flow Control Method for High-Flow Freeways Based on Optimized PPO Algorithm</h4><p class="pub__meta"><strong>AIAT 2026</strong> · Springer LNEE · <em>1st author</em></p></div></div></article>
+          <article class="pub" data-status="published"><span class="pub__number" aria-hidden="true">02</span><div class="pub__row"><span class="badge badge--conf">WTC</span><div class="pub__content"><h4>Car-Following Model Parameter Dynamic Optimization Research</h4><p class="pub__meta"><strong>WTC 2025</strong> · 世界交通运输大会 · <em>1st author</em> · <a href="https://doi.org/10.26914/c.cnkihy.2025.017610" target="_blank" rel="noopener">DOI</a></p></div></div></article>
+          <article class="pub" data-status="published"><span class="pub__number" aria-hidden="true">03</span><div class="pub__row"><span class="badge badge--q2">Q2</span><div class="pub__content"><h4>Robust Minimax Multi-Agent Deep Deterministic Policy Gradient for Reward Uncertainty</h4><p class="pub__meta"><strong>Applied Intelligence</strong> · <em>2nd author</em> · <a href="https://doi.org/10.1007/s10489-026-07255-5" target="_blank" rel="noopener">DOI</a></p></div></div></article>
+          <article class="pub" data-status="published"><span class="pub__number" aria-hidden="true">04</span><div class="pub__row"><span class="badge badge--q1">Q1</span><div class="pub__content"><h4>Partially temporally constrained modeling of speeding crash injury severities on freeways and non-freeways</h4><p class="pub__meta"><strong>Accident Analysis and Prevention</strong> · <em>3rd author</em> · <a href="https://doi.org/10.1016/j.aap.2025.107917" target="_blank" rel="noopener">DOI</a></p></div></div></article>
+          <h3 class="subhead" data-publication-heading="review">Under review <span class="subhead__count">05</span></h3>
+          <article class="pub" data-status="review"><span class="pub__number" aria-hidden="true">05</span><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Under review</span><div class="pub__content"><h4>MURATO: Robust Adaptive Joint Trajectory Planning and Task Offloading for Multi-UAV Edge Computing</h4><p class="pub__meta"><strong>IEEE Internet of Things Journal</strong> · <em>1st author</em></p></div></div></article>
+          <article class="pub" data-status="review"><span class="pub__number" aria-hidden="true">06</span><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Under review</span><div class="pub__content"><h4>Global-state PPOv9 and spatially decoupled Hybrid control for heterogeneous freeway merging traffic</h4><p class="pub__meta"><strong>Scientific Reports</strong> · <em>1st author</em></p></div></div></article>
+          <article class="pub" data-status="review"><span class="pub__number" aria-hidden="true">07</span><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Under review</span><div class="pub__content"><h4>DyCo-MAVSL: Dynamic Coalition-based Multi-Agent Variable Speed Limit Control for Continuous Freeway Bottlenecks</h4><p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>3rd author</em></p></div></div></article>
+          <article class="pub" data-status="review"><span class="pub__number" aria-hidden="true">08</span><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Under review</span><div class="pub__content"><h4>Continual Attention Learning-based Multi-Agent Variable Speed Limits Control in Closely-Spaced Continuous Freeway Bottlenecks</h4><p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>3rd author</em></p></div></div></article>
+          <article class="pub" data-status="review"><span class="pub__number" aria-hidden="true">09</span><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Under review</span><div class="pub__content"><h4>Safety-constrained Deep Reinforcement Learning with Hybrid Action Masking and Projection for Highway Movable Differential Variable Speed Limits</h4><p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>6th author</em></p></div></div></article>
+        </div>
+      </section>
+
       <section id="education" class="section">
-        <h2 class="section__title">Education</h2>
+        <h2 class="section__title"><span class="section__number" aria-hidden="true">03</span>Education <span class="section__zh" lang="zh-CN">教育经历</span></h2>
         <div class="section__body"><div class="edu">
           <article class="edu__item"><div class="edu__time">2026.09 – 2028.01</div><div class="edu__info"><h3>The University of Hong Kong</h3><p class="edu__degree">MSc in Low-Altitude Technology</p><p class="edu__zh">香港大学 · 低空技术硕士</p></div></article>
           <article class="edu__item"><div class="edu__time">2022.09 – 2026.06</div><div class="edu__info"><h3>Wuhan University of Technology</h3><p class="edu__degree">B.Eng. in Traffic Engineering</p><p class="edu__zh">武汉理工大学 · 交通工程本科</p></div></article>
         </div></div>
       </section>
 
-      <section id="research" class="section">
-        <h2 class="section__title">Research Interests</h2>
-        <div class="section__body"><div class="research-grid">
-          <article class="r-card"><div class="r-card__icon"><i class="fa-solid fa-car-side" aria-hidden="true"></i></div><h3>智慧交通 · Intelligent Transportation</h3><p>面向车路协同（V2X）场景的异构交通流协同控制、可变限速与合流区决策优化，结合 SUMO/CARLA 等仿真平台开展算法评估与部署验证。</p></article>
-          <article class="r-card"><div class="r-card__icon"><i class="fa-solid fa-helicopter-symbol" aria-hidden="true"></i></div><h3>低空技术 · UAV Systems</h3><p>自主设计组装无人机，具备植保、航测和 DJI 机场 3 部署经验；研究方向覆盖多无人机轨迹规划与边缘计算任务卸载。</p></article>
-        </div></div>
-      </section>
-
-      <section id="publications" class="section">
-        <h2 class="section__title">Publications</h2>
-        <div class="section__body">
-          <h3 class="subhead">Published / Accepted</h3>
-          <article class="pub"><div class="pub__row"><span class="badge badge--ei">EI</span><div class="pub__content"><h4>V2X-Collaborative Heterogeneous Traffic Flow Control Method for High-Flow Freeways Based on Optimized PPO Algorithm</h4><p class="pub__meta"><strong>AIAT 2026</strong> · Springer LNEE · <em>1st author</em></p></div></div></article>
-          <article class="pub"><div class="pub__row"><span class="badge badge--conf">WTC</span><div class="pub__content"><h4>Car-Following Model Parameter Dynamic Optimization Research</h4><p class="pub__meta"><strong>WTC 2025</strong> · 世界交通运输大会 · <em>1st author</em> · <a href="https://doi.org/10.26914/c.cnkihy.2025.017610" target="_blank" rel="noopener">DOI</a></p></div></div></article>
-          <article class="pub"><div class="pub__row"><span class="badge badge--q2">Q2</span><div class="pub__content"><h4>Robust Minimax Multi-Agent Deep Deterministic Policy Gradient for Reward Uncertainty</h4><p class="pub__meta"><strong>Applied Intelligence</strong> · <em>2nd author</em> · <a href="https://doi.org/10.1007/s10489-026-07255-5" target="_blank" rel="noopener">DOI</a></p></div></div></article>
-          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><div class="pub__content"><h4>Partially temporally constrained modeling of speeding crash injury severities on freeways and non-freeways</h4><p class="pub__meta"><strong>Accident Analysis and Prevention</strong> · <em>3rd author</em> · <a href="https://doi.org/10.1016/j.aap.2025.107917" target="_blank" rel="noopener">DOI</a></p></div></div></article>
-          <h3 class="subhead">Under Review</h3>
-          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>MURATO: Robust Adaptive Joint Trajectory Planning and Task Offloading for Multi-UAV Edge Computing</h4><p class="pub__meta"><strong>IEEE Internet of Things Journal</strong> · <em>1st author</em></p></div></div></article>
-          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>Global-state PPOv9 and spatially decoupled Hybrid control for heterogeneous freeway merging traffic</h4><p class="pub__meta"><strong>Scientific Reports</strong> · <em>1st author</em></p></div></div></article>
-          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>DyCo-MAVSL: Dynamic Coalition-based Multi-Agent Variable Speed Limit Control for Continuous Freeway Bottlenecks</h4><p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>3rd author</em></p></div></div></article>
-          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>Continual Attention Learning-based Multi-Agent Variable Speed Limits Control in Closely-Spaced Continuous Freeway Bottlenecks</h4><p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>3rd author</em></p></div></div></article>
-          <article class="pub"><div class="pub__row"><span class="badge badge--q1">Q1</span><span class="badge badge--wip">Review</span><div class="pub__content"><h4>Safety-constrained Deep Reinforcement Learning with Hybrid Action Masking and Projection for Highway Movable Differential Variable Speed Limits</h4><p class="pub__meta"><strong>IEEE Transactions on Intelligent Transportation Systems</strong> · <em>6th author</em></p></div></div></article>
-        </div>
-      </section>
-
       <section id="patents" class="section">
-        <h2 class="section__title">Patents & Copyrights</h2>
+        <h2 class="section__title"><span class="section__number" aria-hidden="true">04</span>Patents &amp; software <span class="section__zh" lang="zh-CN">知识产权</span></h2>
         <div class="section__body">
           <div class="patent-list">
-            <div class="patent patent--granted"><span class="patent__tag">已授权</span><div><h4>国家发明专利 · 一种移动式路侧行人交通冲突监测与预警装置及方法</h4><p>CN202410489742.9 · 学生一作</p></div></div>
-            <div class="patent"><span class="patent__tag">实质审查中</span><div><h4>国家发明专利 · 一种多模态 VR 隧道火灾仿真实验设备协同控制方法</h4><p>CN202511132538.2 · 学生一作</p></div></div>
-            <div class="patent patent--granted"><span class="patent__tag">已授权</span><div><h4>国家发明专利 · 无人对接作业平台协同方法和相关设备</h4><p>CN202511641547.4 · 学生二作</p></div></div>
+            <div class="patent patent--granted"><span class="patent__tag">已授权</span><div><h4>国家发明专利 · 一种移动式路侧行人交通冲突监测与预警装置及方法</h4><p lang="zh-CN">CN202410489742.9 · 学生一作</p></div></div>
+            <div class="patent"><span class="patent__tag">实质审查中</span><div><h4>国家发明专利 · 一种多模态 VR 隧道火灾仿真实验设备协同控制方法</h4><p lang="zh-CN">CN202511132538.2 · 学生一作</p></div></div>
+            <div class="patent patent--granted"><span class="patent__tag">已授权</span><div><h4>国家发明专利 · 无人对接作业平台协同方法和相关设备</h4><p lang="zh-CN">CN202511641547.4 · 学生二作</p></div></div>
           </div>
           <h3 class="subhead">软件著作权</h3>
           <div class="soft-list">
-            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>龙门式起重机智能控制系统 V1.0</strong><span>2025SR1005643</span></div></div>
-            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>大型货车转向内轮轨迹动态预警系统 V1.0</strong><span>2025SR1618070</span></div></div>
-            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>我的生活助手——校园场景个性化AI助手 V1.0</strong><span>2025SR1706356</span></div></div>
-            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>基于LLM自然语言AI数据库管理系统 V1.0</strong><span>2025SR1710178</span></div></div>
-            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>机械哨兵 AI自主巡检系统 V1.0</strong><span>2025SR1886759</span></div></div>
-            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>改扩建路段智能防碰撞预警布设管理系统 V1.0</strong><span>2025SR2172989</span></div></div>
-            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>高速公路车路协同车辆协同换道与合流控制系统 V1.0</strong><span>2025SR2212502</span></div></div>
-            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>基于车路协同的高速公路全息感知与应急指挥系统 V1.0</strong><span>2025SR2212340</span></div></div>
-            <div class="soft"><i class="fa-solid fa-code" aria-hidden="true"></i><div><strong>融合多源感知的高速公路交通事件智能识别与警报系统 V1.0</strong><span>2025SR2212494</span></div></div>
+            <div class="soft"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg><div><strong>龙门式起重机智能控制系统 V1.0</strong><span>2025SR1005643</span></div></div>
+            <div class="soft"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg><div><strong>大型货车转向内轮轨迹动态预警系统 V1.0</strong><span>2025SR1618070</span></div></div>
+            <div class="soft"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg><div><strong>我的生活助手——校园场景个性化AI助手 V1.0</strong><span>2025SR1706356</span></div></div>
+            <div class="soft"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg><div><strong>基于LLM自然语言AI数据库管理系统 V1.0</strong><span>2025SR1710178</span></div></div>
+            <div class="soft"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg><div><strong>机械哨兵 AI自主巡检系统 V1.0</strong><span>2025SR1886759</span></div></div>
+            <div class="soft"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg><div><strong>改扩建路段智能防碰撞预警布设管理系统 V1.0</strong><span>2025SR2172989</span></div></div>
+            <div class="soft"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg><div><strong>高速公路车路协同车辆协同换道与合流控制系统 V1.0</strong><span>2025SR2212502</span></div></div>
+            <div class="soft"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg><div><strong>基于车路协同的高速公路全息感知与应急指挥系统 V1.0</strong><span>2025SR2212340</span></div></div>
+            <div class="soft"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg><div><strong>融合多源感知的高速公路交通事件智能识别与警报系统 V1.0</strong><span>2025SR2212494</span></div></div>
           </div>
         </div>
       </section>
 
-      <section id="certifications" class="section"><h2 class="section__title">Certifications</h2><div class="section__body"><div class="cert-grid">
-        <article class="cert-card"><div class="cert-card__icon"><i class="fa-solid fa-plane-up" aria-hidden="true"></i></div><div><h4>CAAC 轻型民用无人驾驶航空器安全操控理论培训合格证明</h4><p>中国民用航空局 · 2024.04</p></div></article>
-        <article class="cert-card"><div class="cert-card__icon"><i class="fa-solid fa-helicopter-symbol" aria-hidden="true"></i></div><div><h4>AOPA 民用无人机驾驶员合格证</h4><p>中国航空器拥有者及驾驶员协会 · 2024.04</p></div></article>
-        <article class="cert-card"><div class="cert-card__icon"><i class="fa-solid fa-plane" aria-hidden="true"></i></div><div><h4>DJI 农用无人机系统操作手合格证</h4><p>深圳市大疆创新科技有限公司 · 有效期至 2028.03</p></div></article>
-        <article class="cert-card"><div class="cert-card__icon"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div><div><h4>IICT 无人机操控工程师</h4><p>工信人才岗位能力评价</p></div></article>
+      <section id="certifications" class="section"><h2 class="section__title"><span class="section__number" aria-hidden="true">05</span>Certifications <span class="section__zh" lang="zh-CN">专业资质</span></h2><div class="section__body"><div class="cert-grid">
+        <article class="cert-card"><div class="cert-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z M22 2 11 13"/></svg></div><div><h4>CAAC 轻型民用无人驾驶航空器安全操控理论培训合格证明</h4><p lang="zh-CN">中国民用航空局 · 2024.04</p></div></article>
+        <article class="cert-card"><div class="cert-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z M22 2 11 13"/></svg></div><div><h4>AOPA 民用无人机驾驶员合格证</h4><p lang="zh-CN">中国航空器拥有者及驾驶员协会 · 2024.04</p></div></article>
+        <article class="cert-card"><div class="cert-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z M22 2 11 13"/></svg></div><div><h4>DJI 农用无人机系统操作手合格证</h4><p lang="zh-CN">深圳市大疆创新科技有限公司 · 有效期至 2028.03</p></div></article>
+        <article class="cert-card"><div class="cert-card__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="m8 12-2 10 6-3 6 3-2-10"/></svg></div><div><h4>IICT 无人机操控工程师</h4><p lang="zh-CN">工信人才岗位能力评价</p></div></article>
       </div></div></section>
 
-      <section id="conferences" class="section"><h2 class="section__title">Conferences</h2><div class="section__body"><div class="conf-list">
-        <div class="conf"><span class="conf__year">2026</span><div class="conf__info"><h4>AIAT 人工智能与自主式交通国际学术会议</h4><p>武汉 · 论文报告</p></div></div>
-        <div class="conf"><span class="conf__year">2025</span><div class="conf__info"><h4>WTC 世界交通运输大会</h4><p>苏州 · 墙报演讲</p></div></div>
-        <div class="conf"><span class="conf__year">2025</span><div class="conf__info"><h4>先进制造青年科技工作者论坛</h4><p>上海</p></div></div>
+      <section id="conferences" class="section"><h2 class="section__title"><span class="section__number" aria-hidden="true">06</span>Conferences <span class="section__zh" lang="zh-CN">学术会议</span></h2><div class="section__body"><div class="conf-list">
+        <div class="conf"><span class="conf__year">2026</span><div class="conf__info"><h4>AIAT 人工智能与自主式交通国际学术会议</h4><p lang="zh-CN">武汉 · 论文报告</p></div></div>
+        <div class="conf"><span class="conf__year">2025</span><div class="conf__info"><h4>WTC 世界交通运输大会</h4><p lang="zh-CN">苏州 · 墙报演讲</p></div></div>
+        <div class="conf"><span class="conf__year">2025</span><div class="conf__info"><h4>先进制造青年科技工作者论坛</h4><p lang="zh-CN">上海</p></div></div>
       </div></div></section>
 
-      <section id="awards" class="section"><h2 class="section__title">Awards</h2><div class="section__body"><div class="awards">
+      <section id="awards" class="section"><h2 class="section__title"><span class="section__number" aria-hidden="true">07</span>Awards <span class="section__zh" lang="zh-CN">荣誉奖励</span></h2><div class="section__body"><div class="awards">
         <div class="award"><span class="award__level award__level--n">国家级</span><div class="award__body"><strong>“CIMC” 中国智能制造挑战赛</strong><span>二等奖 · 第一作者</span></div></div>
         <div class="award"><span class="award__level award__level--n">国家级</span><div class="award__body"><strong>“互联网+” 大学生创新创业大赛</strong><span>铜奖</span></div></div>
         <div class="award"><span class="award__level award__level--n">全国赛</span><div class="award__body"><strong>中国青年志愿服务公益创业赛</strong><span>银奖 · 第二作者</span></div></div>
@@ -150,20 +184,20 @@
         <div class="award"><span class="award__level award__level--p">省级</span><div class="award__body"><strong>中国大学生计算机设计大赛</strong><span>三等奖 · 第二作者</span></div></div>
       </div></div></section>
 
-      <section id="experience" class="section"><h2 class="section__title">Experience</h2><div class="section__body"><div class="exp">
+      <section id="experience" class="section"><h2 class="section__title"><span class="section__number" aria-hidden="true">08</span>Experience <span class="section__zh" lang="zh-CN">实践与服务</span></h2><div class="section__body"><div class="exp">
         <article class="exp__card"><div class="exp__top"><h3>京东物流 · JDY 供应链规划</h3><span class="exp__time">2025.07 – 2025.11</span></div><p class="exp__org">北京京东世纪贸易有限公司</p><ul><li>基于“天策”平台分析供应链成本与时效，响应“灭霸”政策实现降本增效。</li><li>深入一线轮岗，完成仓库工艺规划设计，优化功能分区与设备布局。</li></ul></article>
         <article class="exp__card"><div class="exp__top"><h3>学院学生会 · 执行主席</h3><span class="exp__time">2024.06 – 2025.06</span></div><p class="exp__org">武汉理工大学交通与物流工程学院</p><ul><li>主办“挑战杯”院级选拔赛，承办国家级 A 类竞赛省赛。</li><li>统筹跨年晚会等大型活动，服务学院 8000+ 师生。</li></ul></article>
       </div><h3 class="subhead">Academic Service</h3><ul class="service"><li>Reviewer · <em>Scientific Reports</em> (Nature Portfolio)</li><li>Member · IEEE</li><li>Member · IEEE Aerospace and Electronic Systems Society</li><li>Member · IEEE Intelligent Transportation Systems Society</li><li>Member · 中国公路学会</li><li>Member · 中国机械工程学会</li></ul></div></section>
 
-      <section id="contact" class="section"><h2 class="section__title">Contact</h2><div class="section__body"><div class="contact-grid">
-        <a href="mailto:340585@whut.edu.cn" class="c-card"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span class="c-card__label">WHUT</span><strong>340585@whut.edu.cn</strong></a>
-        <a href="mailto:u3678199@connect.hku.hk" class="c-card"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span class="c-card__label">HKU</span><strong>u3678199@connect.hku.hk</strong></a>
-        <a href="https://github.com/Qiming-Y" target="_blank" rel="noopener" class="c-card"><i class="fa-brands fa-github" aria-hidden="true"></i><span class="c-card__label">GitHub</span><strong>Qiming-Y</strong></a>
+      <section id="contact" class="section section--contact"><p class="eyebrow">Get in touch</p><h2 class="section__title">Let's connect.</h2><p class="contact-intro">For conversations about intelligent mobility, multi-agent learning, and low-altitude systems.</p><div class="section__body"><div class="contact-grid">
+        <a href="mailto:340585@whut.edu.cn" class="c-card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span class="c-card__label">WHUT</span><strong>340585@whut.edu.cn</strong></a>
+        <a href="mailto:u3678199@connect.hku.hk" class="c-card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span class="c-card__label">HKU</span><strong>u3678199@connect.hku.hk</strong></a>
+        <a href="https://github.com/Qiming-Y" target="_blank" rel="noopener" class="c-card"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1-5-3-7-3m14 6v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.8-1.6 6.8-7.3a5.7 5.7 0 0 0-1.5-4A5.3 5.3 0 0 0 20.2.1S19 0 16 1.8a13.4 13.4 0 0 0-7 0C6 0 4.8.1 4.8.1a5.3 5.3 0 0 0-.1 3.9 5.7 5.7 0 0 0-1.5 4c0 5.7 3.5 6.9 6.8 7.3A3.5 3.5 0 0 0 9 18v4" transform="translate(1 2) scale(.9)"/></svg><span class="c-card__label">GitHub</span><strong>Qiming-Y</strong></a>
       </div></div></section>
     </main>
   </div>
 
-  <footer class="footer"><p>© 2026 杨启明 · Qiming Yang</p></footer>
-  <script src="js/main.js"></script>
+  <footer class="footer"><p>© 2026 Qiming Yang <span lang="zh-CN">杨启明</span></p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+  <script src="js/main.js?v=20260923" defer></script>
 </body>
 </html>
